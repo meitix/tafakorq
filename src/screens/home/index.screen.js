@@ -1,26 +1,73 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, Alert, TouchableOpacity } from 'react-native';
 import ImageSlider from 'react-native-image-slider';
-import { RTLView, RTLText } from 'react-native-rtl-layout';
 import { HomeStyles } from './index.styles';
+import { verticalScale } from '../../helpers/size-fixer.helper';
+import { PostService } from '../../services/post.service';
+import { ScrollView } from '../../../node_modules/react-native-gesture-handler';
+import { ProductHorizontalList } from '../../components/product/product-horizontal-list/product-horizontal-list.component';
+var Enumerable = require('linq');
+import Sidebar from 'react-native-sidebar';
+import { SideBarComponent } from '../../components/Sidebar/sidebar';
+
 
 export default class IndexScreen extends Component {
     static navigationOptions = { title: 'صفحه اصلی', header: null }
+    postService = new PostService();
+
+    state = { data: [], slideImages: [] };
+
+    componentWillMount() {
+        this.getData();
+    }
+
+    getData() {
+        this.postService.getMainPageData(10, 10, 1)
+            .then(response => response.json())
+            .then(d => {
+                let slides = Enumerable.from(d.Slides).select(s => s.LargePath.toLowerCase()).toArray();
+                this.setState({ data: d, slideImages: slides });
+            }).catch(err => {
+                Alert.alert('خطا', 'خطا در دریافت اطلاعات', [
+                    { text: 'باشه', onPress: () => { console.log('باشه کلیک شد.') } },
+                    { text: 'لاگ در کنسول', onPress: () => { console.log(err) } }
+                ])
+            });
+    };
+
+
     render() {
+        
         return (
             <View style={{ flex: 1 }}>
-                <View style={{ height: 500 }}>
-                    <ImageSlider style={{ flex: 1 }} images={[
-                        'https://www.abdn.ac.uk/music/feature-images/old_music_score-wallpaper-1600x900_rdax_450x253.jpg',
-                        'http://www.breadalbane.pkc.sch.uk/BA/wp-content/uploads/2018/01/music-.jpg',
-                        'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/12/YouTube-music-796x419.jpg'
-                    ]} />
-
-                </View>
-                <View>
-                    <Text style={HomeStyles.headerText}>تازه ها</Text>
-                </View>
+                <Sidebar
+                    rightSidebar={<SideBarComponent />}
+                    style={{ flex: 1 }}>
+                    {this.renderContent()}
+                </Sidebar>
             </View>
+
         );
+    }
+
+    renderContent() {
+        return <ScrollView style={{ flex: 1 }}>
+        <View style={{ height: verticalScale(200) }}>
+            <ImageSlider style={{ flex: 1 }} images={this.state.slideImages} />
+        </View>
+        <View>
+            <Text style={HomeStyles.headerText}>تازه ها</Text>
+        </View>
+        <View>
+            <ProductHorizontalList navigation={this.props.navigation} data={this.state.data.NewPosts} />
+        </View>
+        <View>
+            <Text style={HomeStyles.headerText}>برترین ها</Text>
+        </View>
+        <View>
+            <ProductHorizontalList navigation={this.props.navigation} data={this.state.data.PopularPosts} />
+        </View>
+
+    </ScrollView>
     }
 }
