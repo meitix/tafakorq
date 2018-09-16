@@ -1,5 +1,9 @@
 import { CommonStyles } from "../../common/styles";
-import { scale, verticalScale } from "../../helpers/size-fixer.helper";
+import {
+  scale,
+  verticalScale,
+  moderateScale
+} from "../../helpers/size-fixer.helper";
 import { colors } from "../../common/colors";
 
 export const productDetailsStyle = {
@@ -7,16 +11,17 @@ export const productDetailsStyle = {
     CommonStyles.text,
     {
       fontSize: scale(15),
-      writingDirection: "rtl"
+      writingDirection: "rtl",
+      padding: scale(10)
     }
   ],
   price: [
     CommonStyles.text,
     {
-      textAlign: "center",
-      flexDirection: "column",
-      flex: 2,
-      fontSize: scale(18)
+      textAlign: "right",
+      fontSize: scale(20),
+      color: colors.price,
+      marginRight: moderateScale(20)
     }
   ],
   content: [
@@ -24,36 +29,23 @@ export const productDetailsStyle = {
     {
       textAlign: "right",
       writingDirection: "rtl",
-      fontSize: scale(10),
+      fontSize: scale(13),
       padding: scale(10)
     }
   ],
-  createDate: {
+  createDate: [CommonStyles.text , {
     textAlign: "left",
     fontSize: scale(12),
     color: "#ccc",
-    flexDirection: "column",
-    flex: 2
-  },
+  }],
   image: {
     width: "100%",
     height: verticalScale(250)
   },
   addToCardButton: {
-    container: {
-      backgroundColor: colors.secoundary,
-      width: "60%",
-      margin: scale(5),
-      padding: scale(20),
-      alignSelf: "center"
-    },
-    text: [
-      CommonStyles.text,
-      {
-        color: "black",
-        fontSize: scale(16),
-        fontFamily: "IRANYekan"
-      }
-    ]
+    width: "60%",
+    margin: scale(5),
+    padding: scale(20),
+    alignSelf: "center"
   }
 };

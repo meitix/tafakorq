@@ -9,30 +9,38 @@ export class BottomNavigationComponent extends Component {
       <BottomNavigation active={this.state.active} hidden={false}>
         <BottomNavigation.Action
           key="category"
+          icon="search"
+          style={{
+            label: BottomNavigationStyles.label
+          }}
+          label="سرچ"
+          onPress={() => this.setState({ active: "category" })}
+        />
+        <BottomNavigation.Action
+          key="profile"
+          icon="person"
+          label="پروفایل"
+          style={{
+            label: BottomNavigationStyles.label
+          }}
+          onPress={() => { 
+            this.setState({ active: "profile" });
+            this.props.navigation.navigate('Profile')
+          }
+        }
+        />
+        <BottomNavigation.Action
+          key="credit"
           icon="toc"
           style={{
             label: BottomNavigationStyles.label
           }}
-          label="موضوعات"
-          onPress={() => this.setState({ active: "category" })}
-        />
-        <BottomNavigation.Action
-          key="orders"
-          icon="shopping-cart"
-          label="خریدها"
-          style={{
-            label: BottomNavigationStyles.label
-          }}
-          onPress={() => this.setState({ active: "orders" })}
-        />
-        <BottomNavigation.Action
-          key="credit"
-          icon="credit-card"
-          style={{
-            label: BottomNavigationStyles.label
-          }}
-          label="اعتبار حساب"
-          onPress={() => this.setState({ active: "credit" })}
+          label="مطالب انگیزشی"
+          onPress={() => { 
+            this.setState({ active: "credit" });
+            this.props.navigation.navigate('Products' , {id: 4})
+          }
+        }
         />
       </BottomNavigation>
     );

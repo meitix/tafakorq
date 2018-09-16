@@ -8,7 +8,7 @@ export class ProductItem extends Component {
         const data = this.props.data;
         return (
             <View style={[ProductItemStyles.container, this.props.style]}>
-                <Card onPress={ this.gotoDetails(data)}>
+                <Card key={data.Id} onPress={ this.gotoDetails(data)}>
                     <Image style={ProductItemStyles.image} source={{ uri: data.MainPicMedium.toLowerCase() }} />
                     <View style={ProductItemStyles.body}>
                         <Text style={[ProductItemStyles.text, ProductItemStyles.title]}>{data.Title}</Text>
@@ -22,6 +22,7 @@ export class ProductItem extends Component {
     }
 
     gotoDetails(data) {
+        
         return () => { this.props.navigation.navigate('ProductDetails', { post: data }); };
     }
 

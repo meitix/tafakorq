@@ -1,31 +1,37 @@
 import React, { Component } from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View } from "react-native";
 import Image from "react-native-image-progress";
-import { Card, Button  } from "react-native-material-ui";
+import { Card } from "react-native-material-ui";
+import { Button, Row, Col, Icon, Tab, Tabs, TabHeading } from "native-base";
 import ProgressBar from "react-native-progress/Bar";
 import { ProductHorizontalList } from "../../components/product/product-horizontal-list/product-horizontal-list.component";
 import { PostService } from "../../services/post.service";
 import { productDetailsStyle } from "./product-details.styles";
 var Enumerable = require("linq");
-import HeaderImageScrollView, { TriggeringView } from 'react-native-image-header-scroll-view';
+import HeaderImageScrollView, {
+  TriggeringView
+} from "react-native-image-header-scroll-view";
 import { verticalScale } from "../../helpers/size-fixer.helper";
 import { CommonStyles } from "../../common/styles";
 import { colors } from "../../common/colors";
-
+import {FilesGrid} from '../../components/product/files-grid/files-grid.component'
+import { Comments } from "../../components/comment/comment.compnent";
 export default class ProductDetailsScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.post.title,
-     header: null
+    header: null
   });
   _imageCarouse;
   state = {
     post: this.props.navigation.state.params.post,
     sliderImages: [
       this.props.navigation.state.params.post.MainPicLarge.toLowerCase()
-    ]
+    ],
+    relatedPosts: [],
+    comments: [],
+    tags: [],
+    files: []
   };
-
-  sliderImages = [];
 
   constructor(props) {
     super(props);
@@ -36,7 +42,7 @@ export default class ProductDetailsScreen extends Component {
   }
 
   makeSliderArray(post) {
-    this.sliderImages = Enumerable.from(post.Pictures)
+    return Enumerable.from(post.Pictures)
       .select(p => p.Large)
       .toArray();
   }
@@ -47,8 +53,15 @@ export default class ProductDetailsScreen extends Component {
       .getPost(this.state.post.Id)
       .then(res => res.json())
       .then(post => {
-        this.setState({ post: post.Post });
-        this.makeSliderArray(post.Post);
+        const state = this.state;
+        state.post = post.Post;
+        state.sliderImages = post.Pictures;
+        state.relatedPosts = post.RelatedPosts;
+        state.comments = post.Comments;
+        state.tags = post.Tags;
+        state.files = post.Files;
+        this.setState(state);
+        console.log(post.RelatedPosts)
       })
       .catch(err => {
         console.error(err);
@@ -58,40 +71,17 @@ export default class ProductDetailsScreen extends Component {
   render() {
     return (
       <HeaderImageScrollView
-      maxHeight={verticalScale(400)}
-      minHeight={verticalScale(50)}
-      scrollViewBackgroundColor={colors.background}
-      headerImage={{uri:this.state.sliderImages[0]}}
-      foregroundParallaxRatio={4}
-    >
-      <View>
-        <TriggeringView onHide={() => console.log('text hidden')} >
-        <Card>
-          <Text style={productDetailsStyle.title}>{this.state.post.Title}</Text>
-          <Text style={productDetailsStyle.Price}>{this.state.post.Price}</Text>
-          <Text style={productDetailsStyle.createDate}>
-            {this.state.post.CreateDate}{" "}
-          </Text>
-        </Card>
-        <Button
-          text="نمایش فایل ها"
-          style={productDetailsStyle.addToCardButton}
-        />
-        <Card>
-          <Text style={productDetailsStyle.content}>
-            {this.state.post.Summary}
-          </Text>
-
-          <Text style={productDetailsStyle.content}>
-            {this.state.post.Content}
-          </Text>
-        </Card>
-        </TriggeringView>
-      </View>
-        
-    </HeaderImageScrollView>
+        maxHeight={verticalScale(400)}
+        minHeight={verticalScale(50)}
+        scrollViewBackgroundColor={colors.background}
+        headerImage={{ uri: this.state.sliderImages[0] }}
+        foregroundParallaxRatio={4}
+      >
+        {this._renderContent()}
+      </HeaderImageScrollView>
     );
   }
+
 
   _renderCrousel(images) {
     return (
@@ -112,24 +102,108 @@ export default class ProductDetailsScreen extends Component {
     );
   }
 
-
-  renderNavBar() {
+  _renderContent() {
     return (
       <View>
-       <Text>navbar</Text>
+        <TriggeringView onHide={() => console.log("text hidden")}>
+        {this._renderProductTopInfo()}
+       
+          <Tabs 
+            tabContainerStyle={{ backgroundColor: colors.primary }}
+            tabBarBackgroundColor={colors.primary}
+          >
+            {this._renderCommentsTab()}
+            {this._renderFilesTab()}
+            {this._renderDescriptionTab()}
+          </Tabs>
+
+        </TriggeringView>
+          <ProductHorizontalList
+            navigation={this.props.navigation}
+            data={this.state.relatedPosts}
+          />
       </View>
+    );
+
+  }
+
+_renderProductTopInfo() {
+    return (
+        <Card>
+        <Row>
+          <Text style={productDetailsStyle.title}>
+            {this.state.post.Title}
+          </Text>
+        </Row>
+        <Row>
+          <Col>
+            <Text style={productDetailsStyle.createDate}>
+              {this.state.post.CreateDate}{" "}
+            </Text>
+          </Col>
+          <Col>
+            <Text style={productDetailsStyle.price}>
+              {this.state.post.Price} تومان
+            </Text>
+          </Col>
+        </Row>
+      </Card>
+    );
+}
+
+
+_renderCommentsTab() {
+    return (
+      <Tab
+        heading={
+          <TabHeading>
+            <Text style={[CommonStyles.text, CommonStyles.tabTextStyle]}>
+              نظرات کاربران
+            </Text>
+            <Icon style={CommonStyles.tabIcon} type="MaterialIcons" name="comment" />
+          </TabHeading>
+        }
+      >
+       <Comments data={this.state.comments} />
+      </Tab>
     );
   }
 
-  _renderContent(post) {
-    return null;
+
+  _renderFilesTab() {
+    return (
+      <Tab
+        heading={
+          <TabHeading>
+            <Text style={[CommonStyles.text, CommonStyles.tabTextStyle]}>
+              فایل ها
+            </Text>
+            <Icon style={CommonStyles.tabIcon} type="MaterialIcons" name="archive" />
+          </TabHeading>
+        }
+      >
+        <FilesGrid postId={this.state.post.Id} data={this.state.files} />
+      </Tab>
+    );
   }
 
-  _renderHeader() {
-    return <Text>Header</Text>;
-  }
-
-  _renderFooter() {
-    return <Text>Footer</Text>;
+  _renderDescriptionTab() {
+    return (
+      <Tab
+        heading={
+          <TabHeading>
+            <Text style={[CommonStyles.text, CommonStyles.tabTextStyle]}>
+              توضیحات
+            </Text>
+            <Icon style={CommonStyles.tabIcon} type="MaterialIcons" name="toc" />
+          </TabHeading>
+        }
+      >
+        <Text style={productDetailsStyle.content}>
+          {this.state.post.Summary}
+          {this.state.post.Content}
+        </Text>
+      </Tab>
+    );
   }
 }

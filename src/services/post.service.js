@@ -1,5 +1,5 @@
 import { urls } from "./urls";
-
+import {ApiManager} from './base.service';
 export class PostService {
     getMainPageData(newPostsCount, popularPostsCount, userId) {
 
@@ -10,7 +10,7 @@ export class PostService {
                 'UserId', '=', userId
             );
 
-        return this.getFromApi(url);
+        return ApiManager.getFromApi(url);
     }
 
     getPost(postId) {
@@ -20,27 +20,26 @@ export class PostService {
             'PostId', '=', postId
         );
 
-        return this.getFromApi(url);
+        return ApiManager.getFromApi(url);
     }
 
-    getFromApi(url) {
-        return fetch(url, {
-            method: 'get',
-            headers: {
-                accept: 'application/json',
-                'content-type': 'application/json'
-            }
-        });
+    getByCategoryId(categoryId , page, pageSize , q , userId, priceState) {
+        const url = urls.getByCategoryId.concat(
+            '?',
+            'MenuId=', categoryId,
+            '&',
+            'page=',page,
+            '&',
+            'pageSize=', pageSize,
+            '&',
+            'srch=',q,
+            '&',
+            'userId=',userId,
+            '&',
+            'priceState=', priceState
+        )
+console.log(url)
+        return ApiManager.getFromApi(url);
     }
-
-    postToApi(url, body) {
-        return fetch(url, {
-            method: 'post',
-            headers: {
-                accept: 'application/json',
-                'content-type': 'application/json'
-            },
-            body: body
-        });
-    }
+  
 }

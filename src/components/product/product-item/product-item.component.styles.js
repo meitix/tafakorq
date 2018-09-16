@@ -1,5 +1,6 @@
 import { scale, verticalScale } from "../../../helpers/size-fixer.helper";
 import { CommonStyles } from "../../../common/styles";
+import { colors } from "../../../common/colors";
 
 
 export const ProductItemStyles = {
@@ -25,7 +26,7 @@ export const ProductItemStyles = {
         color: '#00c776',
     },
     priceAmount: {
-        color: '#f50057',
+        color: colors.price,
     },
     body: {
         padding: scale(5)

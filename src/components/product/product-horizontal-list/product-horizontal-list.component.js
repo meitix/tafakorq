@@ -20,7 +20,7 @@ export class ProductHorizontalList extends Component {
     }
 
     renderItem(item) {
-        return (<ProductItem style={{ width: moderateScale(130) }}
+        return (<ProductItem key={item.Id} style={{ width: moderateScale(130) }}
             data={item}
             navigation={this.props.navigation}
         />);
