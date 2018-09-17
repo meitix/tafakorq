@@ -16,7 +16,7 @@ export class FileService {
     } else {
       // make folder address.
       const folderAddr = FileSystem.documentDirectory.concat("/", "tfakorq");
-      const fileAddr = folderAddr.concat("/", fileId, ".tfkq");
+      const fileAddr = folderAddr.concat("/", fileId, ".pdf");
       // if file downloaded before it will be loaded.
       const file = await FileSystem.getInfoAsync(fileAddr);
       if (file.exists) {

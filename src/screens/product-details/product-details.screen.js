@@ -182,7 +182,7 @@ _renderCommentsTab() {
           </TabHeading>
         }
       >
-        <FilesGrid postId={this.state.post.Id} data={this.state.files} />
+        <FilesGrid navigation={this.props.navigation} postId={this.state.post.Id} data={this.state.files} />
       </Tab>
     );
   }

@@ -1,9 +1,13 @@
-import React , { Component } from 'react';
-import PDFView from 'react-native-view-pdf';
+import React, { Component } from "react";
+import {WebView} from 'react-native';
 
 export class AppPdfViewer extends Component {
-
-    render() {
-       return <PDFView style={this.props.style} resourceType={this.props.type} fadeInDuration={.2} resource={this.props.source} />
-    }
+  render() {
+    return (
+      <WebView
+        style={this.props.style}
+        source={this.props.source}
+      />
+    );
+  }
 }

@@ -3,6 +3,7 @@ import { Thumbnail, List, ListItem, Text, Right, Body } from "native-base";
 import * as Progress from "react-native-progress";
 import { CommonStyles } from "../../../common/styles";
 import { FileService } from "../../../services/file.service";
+import { Linking } from 'expo';
 
 export class FilesGrid extends Component {
   render() {
@@ -55,9 +56,13 @@ export class FilesGrid extends Component {
 
   _openFile(type, url) {
     switch (type) {
-      case "پی دی اف": {
+      case "متن": {
+        console.log( this.props.navigation)
         this.props.navigation.navigate("PDFView", { address: url });
         break;
+      }
+      default: {
+        alert(type)
       }
     }
   }
