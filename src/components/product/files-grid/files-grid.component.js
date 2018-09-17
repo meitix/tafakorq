@@ -1,22 +1,33 @@
 import React, { Component } from "react";
 import { Thumbnail, List, ListItem, Text, Right, Body } from "native-base";
-import * as Progress from 'react-native-progress';
+import * as Progress from "react-native-progress";
 import { CommonStyles } from "../../../common/styles";
-import {FileService} from '../../../services/file.service';
+import { FileService } from "../../../services/file.service";
+
 export class FilesGrid extends Component {
   render() {
-    return <List dataArray={this.props.data} renderRow={this._renderItem} />;
+    return (
+      <List
+        dataArray={this.props.data}
+        renderRow={this._renderItem.bind(this)}
+      />
+    );
   }
 
   _renderItem(item) {
     const image = fileImages[item.Type];
     return (
-      <ListItem style={{alignContent: 'center'}} onPress={ () => this._itemPressed(item)}>
+      <ListItem
+        style={{ alignContent: "center" }}
+        onPress={this._itemPressed(item)}
+      >
         <Body>
-          <Text style={[CommonStyles.text, { textAlign: "right" , marginRight: 20 }]}>
+          <Text
+            style={[CommonStyles.text, { textAlign: "right", marginRight: 20 }]}
+          >
             {item.Title}
           </Text>
-          <Progress.Bar  progress={.25} animated  />
+          <Progress.Bar progress={0.25} animated indeterminate />
         </Body>
 
         <Right>
@@ -27,9 +38,29 @@ export class FilesGrid extends Component {
   }
 
   _itemPressed(item) {
-    FileService.getFile(this.props.postId,item.Id).then()
+    return () => {
+      const fileService = new FileService();
+      fileService
+        .getFile(this.props.postId, item.Id)
+        .then(fileAddr => {
+          if (fileAddr) {
+            this._openFile(item.Type, fileAddr);
+          }
+        })
+        .catch(err => {
+          // TODO: Handle Error.
+        });
+    };
   }
 
+  _openFile(type, url) {
+    switch (type) {
+      case "پی دی اف": {
+        this.props.navigation.navigate("PDFView", { address: url });
+        break;
+      }
+    }
+  }
 }
 
 const fileImages = {

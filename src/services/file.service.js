@@ -1,32 +1,72 @@
+import { FileSystem, Permissions } from "expo";
+import {urls} from './urls';
 import {AuthService} from './auth.service';
-import {LocalManager} from './base.service';
-import { RNFetchBlob } from 'react-native-fetch-blob';
-import { urls } from './urls';
+
 export class FileService {
 
-   static _authService = new AuthService();
-    static dirs = RNFetchBlob.fs.dirs;
-    static getFile = async (postId , fileId) => {
+    _authService = new AuthService();
 
-       const userId = await this._authService.getUserId();
-        const url = urls.getFile.concat(
-            '?',
-            'userId=',userId,
-            '&',
-            'PostId=',postId,
-            '&',
-            'fileId=',fileId
-            );
+  getFile = async (postId, fileId) => {
+    
+    // this.checkPermission().then(granted => {
+    const granted = await this.checkPermission();
 
-      return RNFetchBlob
-       .config({
-         fileCache : true,
-         appendExt : 'tfkq'
-       })
-       .fetch('GET', url)
-       .then((res) => {
-        console.log('The file saved to ', res.path());
-        LocalManager.saveToDevice('file_'.concat(fileId) , res.path()).then(() => LocalManager.saveToDevice('SavedFiles' , fileId))
-       });
+    if (!granted) {
+      alert("متاسفانه، بدون مجوز های لازم قادر به دریافت فایل نیستیم");
+    } else {
+      // make folder address.
+      const folderAddr = FileSystem.documentDirectory.concat("/", "tfakorq");
+      const fileAddr = folderAddr.concat("/", fileId, ".tfkq");
+      // if file downloaded before it will be loaded.
+      const file = await FileSystem.getInfoAsync(fileAddr);
+      if (file.exists) {
+        return fileAddr;
+      }
+
+      // get user id.
+      const userId = await this._authService.getUserId();
+      
+      // create request url.
+      const url = urls.getFile.concat(
+        "?",
+        "userId=",
+        userId,
+        "&",
+        "PostId=",
+        postId,
+        "&",
+        "fileId=",
+        fileId
+      );
+
+      // check folder exists.
+      const chkFolder = await FileSystem.getInfoAsync(folderAddr);
+
+      if (!chkFolder.exists)
+        // make folder.
+        await FileSystem.makeDirectoryAsync(folderAddr);
+        
+      // download file.
+      const dlRes = await FileSystem.downloadAsync(url, fileAddr);
+      if (dlRes.status === 200) {
+        // return fileAddress
+        return dlRes.uri;
+      } else {
+        return null;
+      }
     }
+  };
+
+  // چک کردن پرمیشن مموری برای نوشت فایل دانلود شده.
+  checkPermission = async () => {
+    const getPerm = await Permissions.getAsync(Permissions.CAMERA_ROLL);
+    if (getPerm.status !== "granted") {
+      alert(
+        "ما برای دانلود فایل ها نیاز به دسترسی های لازم داریم ، لطفا آن را اعمال کنید"
+      );
+      const askPerm = await Permissions.askAsync(Permissions.CAMERA_ROLL);
+      if (askPerm.status === "denied") return false;
+    }
+    return true;
+  };
 }

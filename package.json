@@ -42,6 +42,7 @@
     "react-native-progress": "^3.5.0",
     "react-native-rtl-layout": "0.0.1",
     "react-native-snackbar": "^0.5.1",
+    "react-native-view-pdf": "^0.3.4",
     "react-navigation": "^2.9.3"
   }
 }
