@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Text,ListItem } from "native-base";
 import { CommonStyles } from "../../../common/styles";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => MenuItem);
 
 export class MenuItem extends Component {
   render() {

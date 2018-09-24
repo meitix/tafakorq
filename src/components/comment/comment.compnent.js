@@ -12,6 +12,8 @@ import {
 } from "native-base";
 import { CommonStyles } from "../../common/styles";
 import { colors } from "../../common/colors";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => Comments);
 
 export class Comments extends Component {
   render() {

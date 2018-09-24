@@ -16,6 +16,7 @@ import { CommonStyles } from "../../common/styles";
 import { colors } from "../../common/colors";
 import {FilesGrid} from '../../components/product/files-grid/files-grid.component'
 import { Comments } from "../../components/comment/comment.compnent";
+
 export default class ProductDetailsScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.post.title,
@@ -61,7 +62,6 @@ export default class ProductDetailsScreen extends Component {
         state.tags = post.Tags;
         state.files = post.Files;
         this.setState(state);
-        console.log(post.RelatedPosts)
       })
       .catch(err => {
         console.error(err);
@@ -74,7 +74,7 @@ export default class ProductDetailsScreen extends Component {
         maxHeight={verticalScale(400)}
         minHeight={verticalScale(50)}
         scrollViewBackgroundColor={colors.background}
-        headerImage={{ uri: this.state.sliderImages[0] }}
+        //headerImage={{ uri: this.state.sliderImages[0] }}
         foregroundParallaxRatio={4}
       >
         {this._renderContent()}
@@ -182,7 +182,7 @@ _renderCommentsTab() {
           </TabHeading>
         }
       >
-        <FilesGrid navigation={this.props.navigation} postId={this.state.post.Id} data={this.state.files} />
+        <FilesGrid isPaid={this.state.post.IsAvailable} navigation={this.props.navigation} postId={this.state.post.Id} data={this.state.files} />
       </Tab>
     );
   }

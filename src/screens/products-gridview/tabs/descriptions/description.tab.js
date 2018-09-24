@@ -4,6 +4,8 @@ import { ErrorHandler } from "../../../../helpers/error-handler";
 import { Container, Card, Text, CardItem, Title } from "native-base";
 import { AppSpinner } from "../../../../components/spinner";
 import { DescriptionTabStyles } from "./description.tab.styles";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => DescriptionTab);
 
 export class DescriptionTab extends Component {
   state = { category: undefined };

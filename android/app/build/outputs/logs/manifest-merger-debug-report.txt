@@ -1,0 +1,252 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-47:12
+MERGED from [:react-native-vector-icons] F:\react-native-workspace\tafakorq\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-snackbar] F:\react-native-workspace\tafakorq\node_modules\react-native-snackbar\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-gesture-handler] F:\react-native-workspace\tafakorq\node_modules\react-native-gesture-handler\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-view-pdf] F:\react-native-workspace\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\pdfium-android-1.7.1.aar\d68d26ef50039477d08a7b20bbd6fddc\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\80637462bc31f247803a13fc3ff05144\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\5f472385aa957137c303581598f6f20e\AndroidManifest.xml:1:1-3:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\ab63884c964a46209d2f8b7c698789c7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\47f0deb292b0f15f6e0f5132d738334b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\672247467c161406155c398ab9cc7a08\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79245cce54af88e8242292423d5a17e1\AndroidManifest.xml:2:1-9:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+	package
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:2:5-27
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:5:5-81
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:7:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:7:22-75
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:10:5-88
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:10:22-85
+application
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:12:5-32:19
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:29:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\5f472385aa957137c303581598f6f20e\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\5f472385aa957137c303581598f6f20e\AndroidManifest.xml:2:3-17
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:14:7-39
+	android:icon
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:15:7-41
+	android:allowBackup
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:16:7-34
+	android:theme
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:17:7-38
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:13:7-38
+activity#com.tafakorq.MainActivity
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:18:7-30:18
+	android:label
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:20:9-41
+	android:windowSoftInputMode
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:22:9-51
+	android:configChanges
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:21:9-79
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:19:9-37
+intent-filter#android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:23:9-29:25
+action#android.intent.action.MAIN
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:24:13-65
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:24:21-62
+category#android.intent.category.LAUNCHER
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:25:13-73
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:25:23-70
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:26:6-70
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:26:14-68
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:31:7-84
+	android:name
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:31:17-81
+uses-sdk
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] F:\react-native-workspace\tafakorq\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] F:\react-native-workspace\tafakorq\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-snackbar] F:\react-native-workspace\tafakorq\node_modules\react-native-snackbar\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-snackbar] F:\react-native-workspace\tafakorq\node_modules\react-native-snackbar\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-gesture-handler] F:\react-native-workspace\tafakorq\node_modules\react-native-gesture-handler\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] F:\react-native-workspace\tafakorq\node_modules\react-native-gesture-handler\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-view-pdf] F:\react-native-workspace\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-view-pdf] F:\react-native-workspace\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:20:5-43
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\pdfium-android-1.7.1.aar\d68d26ef50039477d08a7b20bbd6fddc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\pdfium-android-1.7.1.aar\d68d26ef50039477d08a7b20bbd6fddc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\80637462bc31f247803a13fc3ff05144\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\80637462bc31f247803a13fc3ff05144\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:2:3-70
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\ab63884c964a46209d2f8b7c698789c7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\ab63884c964a46209d2f8b7c698789c7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\47f0deb292b0f15f6e0f5132d738334b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\47f0deb292b0f15f6e0f5132d738334b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\672247467c161406155c398ab9cc7a08\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\672247467c161406155c398ab9cc7a08\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79245cce54af88e8242292423d5a17e1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\79245cce54af88e8242292423d5a17e1\AndroidManifest.xml:5:5-7:41
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:12:22-70
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:27:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:30:22-73
+provider#android.support.v4.content.FileProvider
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:37:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:41:13-43:58
+	android:resource
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:43:17-55
+	android:name
+		ADDED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:42:17-67
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\005a0044794815b66939e76942503ae3\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\ee0e1480f74bb0d394ae63c2e1ef6f70\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:26:9-47
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4

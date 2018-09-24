@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text} from "react-native";
 import { SplashStyles } from "./splash.style";
-import { Font } from "expo";
+// import { Font } from "expo";
 
-import { setCustomText } from "react-native-global-props";
 import { AuthService } from "../../services/auth.service";
 import LoginScreen from '../login/login-screen/login.screen';
 import IndexScreen from '../home/index.screen';
@@ -27,22 +26,21 @@ export default class SplashScreen extends Component {
         throw err;
       });
 
-    Font.loadAsync({
-      IRANYekan: require("../../../assets/fonts/IRANYekan.ttf"),
-      Roboto: require("native-base/Fonts/Roboto.ttf"),
-      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
-    });
+    // Font.loadAsync({
+    //   IRANYekan: require("../../../assets/fonts/IRANYekan.ttf"),
+    //   Roboto: require("native-base/Fonts/Roboto.ttf"),
+    //   Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    // });
 
-    const customTextOption = {
-      fontFamily: "IRANYekan"
-    };
-    setCustomText(customTextOption);
+    // const customTextOption = {
+    //   fontFamily: "IRANYekan"
+    // };
+    //setCustomText(customTextOption);
   }
 
   render() {
     this._authService.getUserInfo().then(userInfo => {
       setTimeout(() => {
-        this.props.navigation.dismiss();
         if (userInfo === null) this.setState({view: <LoginScreen navigation={this.props.navigation} />})
         else
         this.setState({ view: <IndexScreen navigation={this.props.navigation} />})

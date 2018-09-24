@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-snackbar/android/react-native-snackbar.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-snackbar/android/react-native-snackbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-view-pdf/android/react-native-view-pdf.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-view-pdf/android/react-native-view-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tafakorq.iml" filepath="$PROJECT_DIR$/tafakorq.iml" />
+    </modules>
+  </component>
+</project>

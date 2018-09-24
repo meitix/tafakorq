@@ -13,6 +13,9 @@ import { Styles } from "./product-grid-view.styles";
 import { ProductsTab } from "./tabs/products";
 import { DescriptionTab } from './tabs/descriptions/description.tab';
 
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => ProductsGridViewScreen);
+
 export default class ProductsGridViewScreen extends Component {
   static navigationOptions = {
     header: null

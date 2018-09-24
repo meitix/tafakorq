@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { FlatList } from 'react-native';
 import { ProductItem } from '../product-item/product-item.component'
 import { moderateScale, verticalScale } from '../../../helpers/size-fixer.helper';
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => ProductHorizontalList);
 
 export class ProductHorizontalList extends Component {
 

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Header, Button, Icon, Right, Left } from "native-base";
 import { colors } from "../../common/colors";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => MainPageHeader);
+
 export class MainPageHeader extends Component {
   render() {
     return (

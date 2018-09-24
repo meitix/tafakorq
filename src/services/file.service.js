@@ -1,31 +1,33 @@
-import { FileSystem, Permissions } from "expo";
-import {urls} from './urls';
-import {AuthService} from './auth.service';
+import { PermissionsAndroid } from "react-native";
+import { urls } from './urls';
+import { AuthService } from './auth.service';
+import RNFetchBlob from 'rn-fetch-blob';
 
 export class FileService {
 
-    _authService = new AuthService();
+  _authService = new AuthService();
 
   getFile = async (postId, fileId) => {
-    
+
     // this.checkPermission().then(granted => {
     const granted = await this.checkPermission();
-
+    
     if (!granted) {
       alert("متاسفانه، بدون مجوز های لازم قادر به دریافت فایل نیستیم");
     } else {
       // make folder address.
-      const folderAddr = FileSystem.documentDirectory.concat("/", "tfakorq");
+      const dir = RNFetchBlob.fs.dirs.DocumentDir;
+      const folderAddr = dir.concat("/", "tfakorq");
       const fileAddr = folderAddr.concat("/", fileId, ".pdf");
       // if file downloaded before it will be loaded.
-      const file = await FileSystem.getInfoAsync(fileAddr);
-      if (file.exists) {
+      const fileIsExists = await RNFetchBlob.fs.exists(fileAddr);
+      if (fileIsExists) {
         return fileAddr;
       }
 
       // get user id.
       const userId = await this._authService.getUserId();
-      
+
       // create request url.
       const url = urls.getFile.concat(
         "?",
@@ -40,14 +42,16 @@ export class FileService {
       );
 
       // check folder exists.
-      const chkFolder = await FileSystem.getInfoAsync(folderAddr);
+      const folderIsExists = await RNFetchBlob.fs.exists(folderAddr);
 
-      if (!chkFolder.exists)
+      if (!folderIsExists)
         // make folder.
-        await FileSystem.makeDirectoryAsync(folderAddr);
-        
+        await RNFetchBlob.fs.mkdir(folderAddr);
+
       // download file.
-      const dlRes = await FileSystem.downloadAsync(url, fileAddr);
+      const dlRes = await RNFetchBlob.fetch('get', url, fileAddr);
+      console.log('response');
+      console.log(dlRes)
       if (dlRes.status === 200) {
         // return fileAddress
         return dlRes.uri;
@@ -59,13 +63,16 @@ export class FileService {
 
   // چک کردن پرمیشن مموری برای نوشت فایل دانلود شده.
   checkPermission = async () => {
-    const getPerm = await Permissions.getAsync(Permissions.CAMERA_ROLL);
-    if (getPerm.status !== "granted") {
-      alert(
-        "ما برای دانلود فایل ها نیاز به دسترسی های لازم داریم ، لطفا آن را اعمال کنید"
-      );
-      const askPerm = await Permissions.askAsync(Permissions.CAMERA_ROLL);
-      if (askPerm.status === "denied") return false;
+    let getPerm = await PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE)
+       getPerm = getPerm && await PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE);
+
+    if (!getPerm) {
+      const askPerm = await PermissionsAndroid.requestMultiple(
+      [PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+         PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE] , 
+         {title: 'درخواست مجوز', message: "ما برای دانلود فایل ها نیاز به دسترسی های لازم داریم ، لطفا آن را اعمال کنید"}
+         );
+      if (askPerm === "denied") return false;
     }
     return true;
   };

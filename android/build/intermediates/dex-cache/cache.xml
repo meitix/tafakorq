@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_6480884c39ecb77140e5700400a22fa972eba01f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_aa98ced45859ae4614e4e625f6078306da8f13d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_a9d1658fff5fd6aab174e7d118f98b47688da523.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_01454db02b67d40093d7ca7990383a33e90c5030.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\tafakorq\react-native-gesture-handler\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1b35e54ff3aecbd3d7a034a1580dca474cb40be7">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\tafakorq-react-native-gesture-handler-unspecified_7e1a3ac1a814dfb79a919f6a5fbe06249a37b956.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_bda95a455ce2d18c7a5c6a659ec43989add8d0bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_0d9650024e1632f03b65939f206c4657fc6342d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_d6004044b3033d7ad0f1f6b6d78dc88ccf1b45c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_53261a9b183273e4abd17770994fac0f97d929ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_fdde891ea4e447968d1fa4c9796fb3e601cb2821.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_62e6b6fb6be847b37c1f1e07667ccb2e7ee192da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.55.4_c483a4fd3e90fd41007885989eefc67e6acfa68d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_6e8f8f382094cfe9372577c976b35d68203290a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_7fc2de90f17759f8b8a48f2c0ed59406ed1df48f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_20b6436aaadf1543ff9c99b213e053958f1c36f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_56db3626c4ee8997d4492b02b87e91e0cfd7d91e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\tafakorq\react-native-view-pdf\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d5013540cfa848a2b953a609a8dbe1a43a66906a">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\tafakorq-react-native-view-pdf-unspecified_39f3d6662300d3e5eb1c466d2682db775cc77128.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\tafakorq\react-native-snackbar\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b476239686e1e0597af51147649e0828e6c8346e">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\tafakorq-react-native-snackbar-unspecified_4779ec7ce771708228df283b5822d60929964481.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_34930df65d6e3824d6c0cbd408d979e9f0aa5d89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_8245e06ec7634f187487962959ff7dc9686758c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_0b0b90764342a24dbfb843637786ff282bdc9a13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.github.barteksc\pdfium-android\1.7.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ced2c9cad18369f076d58319666767cfc6e378e4">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.github.barteksc-pdfium-android-1.7.1_2544f2c943ede9b3c82ce33a747d8daea4d5103a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_4eda6c82cec22cf4f930c1b405e5e418fe7cbbbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_7d2aaf9ab752ce56d5480e703a838f77148ff2ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_4bbb7ea303fe1e4a77d8bc4e9eb82f51e509743d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_cc3a863aa4dd717ae4e514c272ad2e81a1a63b08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_c311e761e32e0982ead82bfd24def4d83ce31d89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\tafakorq\react-native-fetch-blob\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de31e43a8bbd6962302f47420d45c9778d1ae626">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\tafakorq-react-native-fetch-blob-unspecified_658151fa438392bf3324ca79e8122b22c89b2fc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_f96888edbe259c3c9a8427d43c4ec167aea7e2b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_82ddcb86c9339f12a504a50b11f5675a7347bb37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\react-native-workspace\tafakorq\android\app\build\intermediates\exploded-aar\com.github.barteksc\android-pdf-viewer\2.8.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69222656aff9fc06ba45b16a6cf65684ce39e121">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\com.github.barteksc-android-pdf-viewer-2.8.2_d5e086c6358d3bc43b82561ef29cafda722e25c2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sima\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="F:\react-native-workspace\tafakorq\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_396c8adeac7d7c7e22ac2421df704f77cbec8263.jar" />
+    </item>
+
+</items>

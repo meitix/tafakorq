@@ -4,6 +4,8 @@ import { PostService } from "../../../../services/post.service";
 import { AppSpinner } from "../../../../components/spinner";
 
 import { NotFound } from "../../../../components/not-found";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => ProductsTab);
 
 export class ProductsTab extends Component {
   state = { products: undefined };

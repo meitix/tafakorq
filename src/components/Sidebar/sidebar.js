@@ -9,6 +9,8 @@ import { ScrollView } from "react-native-gesture-handler";
 import { AuthService } from "../../services/auth.service";
 import { SideBarStyles } from './sidebar.style';
 import { DefaultProfileImage } from '../images/profile-default/default-profile.component';
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => SideBarComponent);
 
 export class SideBarComponent extends Component {
   state = { menuItems: [], userInfo: undefined };

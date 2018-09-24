@@ -3,6 +3,8 @@ import { Text, Container, View, Content } from "native-base";
 
 import Grid from "react-native-grid-component";
 import { ProductItem } from "../product-item/product-item.component";
+// import { AppRegistry } from 'react-native';
+// AppRegistry.registerComponent("tafakorq" , () => ProductsGridView);
 
 export class ProductsGridView extends Component {
   state = { gridItems: undefined };

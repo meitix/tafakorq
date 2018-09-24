@@ -16,6 +16,7 @@ import { AuthService } from "../../../services/auth.service";
 import { LoadingImage } from "../../../components/images/loading-image/loading.component";
 import { LogoImage } from "../../../components/images/logo/logo-image.component";
 import { ErrorHandler } from '../.././../helpers/error-handler';
+import {AppRegistry} from 'react-native';
 
 export default class VerifyScreen extends Component {
   static navigationOptions = { title: "Welcome", header: null };
@@ -81,6 +82,7 @@ export default class VerifyScreen extends Component {
     authService
       .verifyCode(userId, code)
       .then(result => {
+        
          result.json().then(res => {
         if (res.status) {
           authService.saveUserInfo(res.Customer).then(() => {
@@ -97,12 +99,11 @@ export default class VerifyScreen extends Component {
       })
     })
       .catch(err => {
-        // Snackbar.show({
-        //   title: 'عدم دسترسی به اینترنت',
-        //   duration: Snackbar.LENGTH_SHORT
-        // })
-        console.log(err);
-        alert("خطا در عملیات");
+        Snackbar.show({
+          title: 'عدم دسترسی به اینترنت'
+        })
+        // console.log(err);
+        // alert("خطا در عملیات");
         state.isLoading = false;  
         this.setState(state);
       });

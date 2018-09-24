@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Image } from "react-native";
+// AppRegistry.registerComponent("tafakorq" , () => LogoImage);
 
 const logo = require("../../../../assets/images/logo.png");
 

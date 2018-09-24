@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, Alert } from "react-native";
+import { Text, View, Alert,AppRegistry } from "react-native";
 import ImageSlider from "react-native-image-slider";
 import { HomeStyles } from "./index.styles";
 import { verticalScale } from "../../helpers/size-fixer.helper";
@@ -14,7 +14,8 @@ import {
   Drawer,
   Container
 } from "native-base";
-import { MainPageHeader } from '../../components/header/header.component'
+import { MainPageHeader } from '../../components/header/header.component';
+
 export default class IndexScreen extends Component {
   static navigationOptions = {
     title: "صفحه اصلی",
@@ -122,3 +123,6 @@ export default class IndexScreen extends Component {
   }
 
 }
+
+
+AppRegistry.registerComponent("tafakorq" , () => IndexScreen);

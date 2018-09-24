@@ -1,3 +1,4 @@
+import {AppRegistry} from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import IndexScreen from './src/screens/home/index.screen';
 import SplashScreen from './src/screens/splash/splash.screen';
@@ -10,13 +11,16 @@ import PDFViewScreen from './src/screens/product-details/pdf-view/pdf-view.scree
 
 const App = createStackNavigator({
   Splash: { screen: SplashScreen},
-  Home: {screen: IndexScreen },
-  ProductDetails: {screen: ProductDetailsScreen},
   LoginSign: { screen: LoginScreen },
   VerifyMobile: {screen: VerifyScreen},
+  Home: {screen: IndexScreen },
   Products: {screen: ProductsGridViewScreen},
+  ProductDetails: {screen: ProductDetailsScreen},
   Profile: {screen: ProfileScreen},
   PDFView: {screen: PDFViewScreen}
 });
+
+
+AppRegistry.registerComponent('tafakorq' , () => App)
 
 export default App;

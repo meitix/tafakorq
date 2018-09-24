@@ -10,6 +10,9 @@ export const urls = {
     getByCategoryId: serverAddress.concat('/AppContent/Categories/Index'),
     getFile: serverAddress.concat('/AppContent/Posts/GetFile'),
 
+    // payment urls.
+    finalizePurchase: serverAddress.concat('/AppContent/Purchase/GetPurchaseDetails'),
+
     // auth urls.
     sendMobile: serverAddress.concat('/AppContent/Authentication/SendSMS'),
     verifyCode: serverAddress.concat('/AppContent/Authentication/CheckCode'),

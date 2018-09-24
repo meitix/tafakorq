@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { AppRegistry } from 'react-native';
 import { scale, moderateScale, verticalScale } from "../../../helpers/size-fixer.helper";
 import {
   Container,
@@ -16,7 +17,6 @@ import { AuthService } from "../../../services/auth.service";
 import { LoadingImage } from "../../../components/images/loading-image/loading.component";
 import { LogoImage } from "../../../components/images/logo/logo-image.component";
 
-// import Snackbar from 'react-native-snackbar';
 
 
 export default class LoginScreen extends Component {
@@ -52,7 +52,7 @@ export default class LoginScreen extends Component {
               rounded
               disabled={this.state.isLoading}
               info
-              onPress={ () => this.sendMobileNumber(this.state.mobile)}
+              onPress={this.sendMobileNumber.bind(this)}
             >
               <Text style={CommonStyles.text}>ارسال</Text> 
               <LoadingImage
@@ -77,9 +77,14 @@ export default class LoginScreen extends Component {
     authService
       .sendMobile(mobile)
       .then(result => {
+        console.log(result)
        result.json().then(res => {
+         alert(res.Status)
+         console.log(res)
         if (res.Status) {
           authService.saveUserId(res.UserId).then(() => {
+            alert('saved to device');
+         
             this.props.navigation.navigate("VerifyMobile");
           }).catch(err => {
             throw err;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
+import { Image} from "react-native";
+// AppRegistry.registerComponent("tafakorq" , () => LoadingImage);
 
 export class LoadingImage extends Component {
   state = { show: this.props.visible };
