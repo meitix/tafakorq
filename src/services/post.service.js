@@ -1,5 +1,6 @@
 import { urls } from "./urls";
 import {ApiManager} from './base.service';
+import { AuthService } from "./auth.service";
 export class PostService {
     getMainPageData(newPostsCount, popularPostsCount, userId) {
 
@@ -13,13 +14,14 @@ export class PostService {
         return ApiManager.getFromApi(url);
     }
 
-    getPost(postId) {
+    getPost = async(postId) => {
+        const authService = new AuthService();
+        const userId = await authService.getUserId(); 
         const url = urls.getPostDetails.concat(
             '?',
-            'UserId', '=', 1, '&',
+            'UserId', '=', userId, '&',
             'PostId', '=', postId
         );
-
         return ApiManager.getFromApi(url);
     }
 
@@ -38,7 +40,6 @@ export class PostService {
             '&',
             'priceState=', priceState
         )
-console.log(url)
         return ApiManager.getFromApi(url);
     }
   

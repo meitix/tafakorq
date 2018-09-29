@@ -1,15 +1,16 @@
 import React, { Component } from "react";
-import { Thumbnail, List, ListItem, Text, Right, Body } from "native-base";
+import { Thumbnail, List, ListItem, Text, Right, Body , Toast} from "native-base";
 import * as Progress from "react-native-progress";
 import { CommonStyles } from "../../../common/styles";
 import { FileService } from "../../../services/file.service";
- import { Alert } from 'react-native';
-import { AuthService } from "../../../services/auth.service";
-import { PostService } from "../../../services/post.service";
+import { Alert, Linking } from 'react-native';
 import { PaymentService } from "../../../services/payment.service";
+import { ErrorHandler } from '../../../helpers/error-handler';
 
 export class FilesGrid extends Component {
   state = { downloadingFilesId: [] }
+  postId = this.props.postId;
+
   render() {
     return (
       <List
@@ -53,7 +54,7 @@ export class FilesGrid extends Component {
 
   _itemPressed(item) {
     return () => {
-      if(this.props.isPaid) {
+      if (this.props.isPaid) {
         this.getFile(item);
       } else {
         this.aksForPayment();
@@ -62,13 +63,37 @@ export class FilesGrid extends Component {
   }
 
   aksForPayment() {
-    Alert.alert(null,'آیا مایل به پرداخت هستید ؟' , [
+    Alert.alert(null, 'آیا مایل به پرداخت هستید ؟', [
       {
         text: 'بله',
         onPress: () => {
           const paymentService = new PaymentService()
-          // navigate to payment screen.
-          paymentService.finalizePurchase(this.props.postId)
+          // check user balance.
+          paymentService.checkUserBalance(this.postId).then(res => {
+            res.json().then(result => {
+              if (result.status) {
+                // call payment api.
+                paymentService.payWithBalance(this.postId).then(resp => {
+                  // handle payment result.
+                  resp.json().then(paymentResult => {
+                    alert(paymentResult.message);
+                  })
+                }).catch(err => {
+                  ErrorHandler.handle(err);
+                  return null;
+                });
+              } else {
+                // open payment getway.
+                paymentService.payWithBalanceUrl(this.postId).then(url => {
+                  Linking.openURL(url);
+                });
+              }
+            })
+          }).catch(err => {
+            ErrorHandler.handle(err);
+            return null;
+          })
+          paymentService.finalizePurchase(this.postId)
         }
       },
       {
@@ -76,25 +101,29 @@ export class FilesGrid extends Component {
         style: 'cancel'
       }
     ])
-      
-    }
-  
+
+  }
+
+  navigateToPaymentScreen() {
+alert('going to navigation screen')
+  }
 
   getFile(item) {
     this.showProgress(item.Id);
-      // get file.
-      const fileService = new FileService();
-      fileService
-        .getFile(this.props.postId, item.Id)
-        .then(fileAddr => {
-          if (fileAddr) {
-            this._openFile(item.Type, fileAddr);
-          }
-          this.hideProgress(item.Id);
-        })
-        .catch(err => {
-          this.hideProgress(item.Id);
-        });
+    // get file.
+    const fileService = new FileService();
+    fileService
+      .getFile(this.postId, item.Id)
+      .then(fileAddr => {
+        if (fileAddr) {
+          this._openFile(item.Type, fileAddr);
+        }
+        this.hideProgress(item.Id);
+      })
+      .catch(err => {
+        this.hideProgress(item.Id);
+        return null;
+      });
   }
 
   hideProgress(itemId) {

@@ -12,6 +12,9 @@ export const urls = {
 
     // payment urls.
     finalizePurchase: serverAddress.concat('/AppContent/Purchase/GetPurchaseDetails'),
+    checkUserBalance: serverAddress.concat('/AppContent/Purchase/UserBalanceIsEnough'),
+    payWithBalance: serverAddress.concat('/AppContent/Purchase/PaymentWithBalance'),
+    payWithGetway: serverAddress.concat('/AppContent/Purchase/Index'),
 
     // auth urls.
     sendMobile: serverAddress.concat('/AppContent/Authentication/SendSMS'),

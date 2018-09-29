@@ -4,6 +4,7 @@ ADDED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManife
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml:1:1-34:12
+MERGED from [:react-native-video] F:\react-native-workspace\tafakorq\node_modules\react-native-video\android-exoplayer\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-47:12
 MERGED from [:react-native-vector-icons] F:\react-native-workspace\tafakorq\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-snackbar] F:\react-native-workspace\tafakorq\node_modules\react-native-snackbar\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-12:12
@@ -12,14 +13,21 @@ MERGED from [:react-native-view-pdf] F:\react-native-workspace\tafakorq\node_mod
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\897e84e2aec4ed2125523309fc6da00e\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-2.7.3.aar\cb45164b873eceff1df7553fd3b7ce70\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\extension-okhttp-2.7.3.aar\80c00fba68e35f779fbf7479fae68aff\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\pdfium-android-1.7.1.aar\d68d26ef50039477d08a7b20bbd6fddc\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\350b69690b10aa7ead5a00667cbf2b05\AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\80637462bc31f247803a13fc3ff05144\AndroidManifest.xml:10:1-18:12
 MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:1:1-4:12
 MERGED from [org.webkit:android-jsc:r174650] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\5f472385aa957137c303581598f6f20e\AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-2.7.3.aar\d26a651ec017ec89ca82e8fba4289f40\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-2.7.3.aar\1860588ae7aa7a25877a57527080cf1a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-2.7.3.aar\8c4e510d401c803a5b68963bcb6baa27\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-2.7.3.aar\edb429af36cadd66ea8f7880bad6008e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-core-2.7.3.aar\a0cdbb1acea0b7c012b78eec190f9712\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\a544d23677abd9acd8e61f71aa23afd4\AndroidManifest.xml:17:1-31:12
@@ -140,6 +148,8 @@ uses-sdk
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
 INJECTED from F:\react-native-workspace\tafakorq\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-video] F:\react-native-workspace\tafakorq\node_modules\react-native-video\android-exoplayer\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] F:\react-native-workspace\tafakorq\node_modules\react-native-video\android-exoplayer\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:rn-fetch-blob] F:\react-native-workspace\tafakorq\node_modules\rn-fetch-blob\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] F:\react-native-workspace\tafakorq\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
@@ -156,6 +166,12 @@ MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\tra
 MERGED from [com.android.support:design:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\design-23.0.1.aar\ed459e7940f41720ba3dda2dc79d4258\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\appcompat-v7-23.0.1.aar\ae433e9af6664863e6ca0e2c6cec827e\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-2.7.3.aar\cb45164b873eceff1df7553fd3b7ce70\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-2.7.3.aar\cb45164b873eceff1df7553fd3b7ce70\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\extension-okhttp-2.7.3.aar\80c00fba68e35f779fbf7479fae68aff\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:extension-okhttp:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\extension-okhttp-2.7.3.aar\80c00fba68e35f779fbf7479fae68aff\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:android-pdf-viewer:2.8.2] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\android-pdf-viewer-2.8.2.aar\80084f32478b5e034730ddfe5598bcbd\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:pdfium-android:1.7.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\pdfium-android-1.7.1.aar\d68d26ef50039477d08a7b20bbd6fddc\AndroidManifest.xml:7:5-9:41
@@ -166,10 +182,18 @@ MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Use
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\80637462bc31f247803a13fc3ff05144\AndroidManifest.xml:14:5-16:41
 MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\45204b751493236e1581fa5c7a833291\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\d78837ee9dc6ac9e033f574d585aab29\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:2:3-70
 MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\da4569f9b9a91ca7917a7158c74ec940\AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-2.7.3.aar\d26a651ec017ec89ca82e8fba4289f40\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-dash-2.7.3.aar\d26a651ec017ec89ca82e8fba4289f40\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-2.7.3.aar\1860588ae7aa7a25877a57527080cf1a\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-hls-2.7.3.aar\1860588ae7aa7a25877a57527080cf1a\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-2.7.3.aar\8c4e510d401c803a5b68963bcb6baa27\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-smoothstreaming-2.7.3.aar\8c4e510d401c803a5b68963bcb6baa27\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-2.7.3.aar\edb429af36cadd66ea8f7880bad6008e\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-ui:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-ui-2.7.3.aar\edb429af36cadd66ea8f7880bad6008e\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-core-2.7.3.aar\a0cdbb1acea0b7c012b78eec190f9712\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.7.3] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\exoplayer-core-2.7.3.aar\a0cdbb1acea0b7c012b78eec190f9712\AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\014b2f847296072baf0395d7dcaad929\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Sima\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\448db0172c93712282ac681b0989cb28\AndroidManifest.xml:21:5-23:63

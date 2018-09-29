@@ -59,6 +59,8 @@ export default class IndexScreen extends Component {
             }
           }
         ]);
+
+        return null;
       });
   }
 

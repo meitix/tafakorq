@@ -16,6 +16,9 @@ import { CommonStyles } from "../../common/styles";
 import { colors } from "../../common/colors";
 import {FilesGrid} from '../../components/product/files-grid/files-grid.component'
 import { Comments } from "../../components/comment/comment.compnent";
+// ignor warning.
+import { YellowBox } from 'react-native';
+YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
 
 export default class ProductDetailsScreen extends Component {
   static navigationOptions = ({ navigation }) => ({

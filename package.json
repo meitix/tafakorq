@@ -41,6 +41,8 @@
     "react-native-rtl-layout": "0.0.1",
     "react-native-snackbar": "^0.5.1",
     "react-native-vector-icons": "^5.0.0",
+    "react-native-video": "^3.2.1",
+    "react-native-video-player": "^0.9.1",
     "react-native-view-pdf": "^0.3.5",
     "react-navigation": "^2.9.3",
     "rn-fetch-blob": "^0.10.13"
