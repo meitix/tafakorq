@@ -142,15 +142,24 @@ alert('going to navigation screen')
   }
 
   _openFile(type, url) {
-    switch (type) {
-      case "متن": {
-        this.props.navigation.navigate("PDFView", { address: url });
-        break;
-      }
-      default: {
-        alert(type)
-      }
-    }
+    console.log(type)
+    // switch (type) {
+    //   case "متن": {
+    //     this.props.navigation.navigate("PDFView", { address: url });
+    //     break;
+    //   } 
+    //   case "عکس": {
+    //     this.props.navigation.navigate("PictureView", { address: url });
+    //     break;
+    //   }
+    //   case "ویدیو": {
+    //     this.props.navigation.navigate("VideoView", { address: url });
+    //     break;
+    //   }
+    //   default: {
+    //     alert(type)
+    //   }
+    // }
   }
 }
 
