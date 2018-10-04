@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import PDFView from "react-native-view-pdf";
-// import { AppRegistry } from 'react-native';
-// AppRegistry.registerComponent("tafakorq" , () => AppPdfViewer);
 
 export class AppPdfViewer extends Component {
   render() {
@@ -12,6 +10,7 @@ export class AppPdfViewer extends Component {
         resourceType={this.props.type}
         resource={this.props.source}
       />
+      // <Text style={this.props.style}>PDF</Text>
     );
   }
 }

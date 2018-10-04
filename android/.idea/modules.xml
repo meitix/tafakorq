@@ -4,9 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-fetch-blob/android/react-native-fetch-blob.iml" />
+      <module fileurl="file://G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-fetch-blob\android\react-native-fetch-blob.iml" filepath="G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-fetch-blob\android\react-native-fetch-blob.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-gesture-handler/android/react-native-gesture-handler.iml" />
+      <module fileurl="file://G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-gesture-handler\android\react-native-gesture-handler.iml" filepath="G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-gesture-handler\android\react-native-gesture-handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-snackbar/android/react-native-snackbar.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-snackbar/android/react-native-snackbar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-view-pdf/android/react-native-view-pdf.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-view-pdf/android/react-native-view-pdf.iml" />
+      <module fileurl="file://G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-snackbar\android\react-native-snackbar.iml" filepath="G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-snackbar\android\react-native-snackbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android/react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-video/android-exoplayer/react-native-video.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-video/android-exoplayer/react-native-video.iml" />
+      <module fileurl="file://G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-view-pdf\android\react-native-view-pdf.iml" filepath="G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-view-pdf\android\react-native-view-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/rn-fetch-blob/android/rn-fetch-blob.iml" filepath="$PROJECT_DIR$/../node_modules/rn-fetch-blob/android/rn-fetch-blob.iml" />
       <module fileurl="file://$PROJECT_DIR$/tafakorq.iml" filepath="$PROJECT_DIR$/tafakorq.iml" />
     </modules>
   </component>

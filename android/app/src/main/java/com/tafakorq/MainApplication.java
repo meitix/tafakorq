@@ -3,17 +3,16 @@ package com.tafakorq;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
-import com.RNFetchBlob.RNFetchBlobPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
-import com.reactlibrary.PDFViewPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
+import com.rumax.reactnative.pdfviewer.PDFViewPackage;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,10 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFetchBlobPackage(),
             new ReactVideoPackage(),
             new VectorIconsPackage(),
             new SnackbarPackage(),
-            new RNFetchBlobPackage(),
             new RNGestureHandlerPackage(),
             new PDFViewPackage()
       );

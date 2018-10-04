@@ -8,6 +8,7 @@ import VerifyScreen from './src/screens/login/verify-screen/verify-code.screen';
 import ProductsGridViewScreen from './src/screens/products-gridview/products-gridview.screen';
 import ProfileScreen from './src/screens/user/profile/profile.screen';
 import PDFViewScreen from './src/screens/product-details/pdf-view/pdf-view.screen';
+import VideoViewScreen from './src/screens/product-details/video-view/video-view.screen';
 
 const App = createStackNavigator({
   Splash: { screen: SplashScreen},
@@ -17,7 +18,8 @@ const App = createStackNavigator({
   Products: {screen: ProductsGridViewScreen},
   ProductDetails: {screen: ProductDetailsScreen},
   Profile: {screen: ProfileScreen},
-  PDFView: {screen: PDFViewScreen}
+  PDFView: {screen: PDFViewScreen},
+  VideoViewScreen: {screen: VideoViewScreen}
 });
 
 

@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.1"
-    timestamp="1537727076301"
+    timestamp="1538469822563"
     token="-8071673799736864882"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -24,25 +24,22 @@
         duration="0" />
 
     <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\outputs\apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -51,39 +48,72 @@
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
         location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
+    <artifact
+        location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1537727076301"
+        timestamp="1538469822563"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\outputs\apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -92,14 +122,50 @@
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="F:\react-native-workspace\tafakorq\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

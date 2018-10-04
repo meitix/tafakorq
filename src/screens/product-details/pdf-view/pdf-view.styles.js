@@ -1,4 +1,4 @@
 export const PDFViewStyles = {
-    width: '100%',
-    height: '100%'
+    marginTop:20,
+    flex: 1
 }

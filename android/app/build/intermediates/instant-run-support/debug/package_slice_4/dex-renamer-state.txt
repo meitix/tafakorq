@@ -1,4 +1,4 @@
-#Fri Sep 21 03:22:19 IRDT 2018
-base.0=F\:\\react-native-workspace\\tafakorq\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+#Tue Oct 02 12:02:28 IRST 2018
+base.0=G\:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\23
 path.0=classes.dex
 renamed.0=classes.dex

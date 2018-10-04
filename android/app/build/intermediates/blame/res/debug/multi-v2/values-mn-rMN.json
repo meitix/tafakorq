@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn-rMN\\values-mn-rMN.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\e28e2a0889700f48f53e8b07b635a821\\res\\values-mn-rMN\\values-mn-rMN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,141,216,289,359,434,515,602,682,758,827",
+                        "endColumns": "85,74,72,69,74,80,86,79,75,68,67",
+                        "endOffsets": "136,211,284,354,429,510,597,677,753,822,890"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "F:\\react-native-workspace\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn-rMN\\values-mn-rMN.xml",
             "map": [
                 {

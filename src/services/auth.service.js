@@ -23,7 +23,6 @@ export class AuthService {
         '&',
         'Code=', code
       )
-      alert(url)
       return ApiManager.postToApi(url);
     }
 

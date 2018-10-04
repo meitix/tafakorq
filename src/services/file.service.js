@@ -49,12 +49,12 @@ export class FileService {
         await RNFetchBlob.fs.mkdir(folderAddr);
 
       // download file.
-      const dlRes = await RNFetchBlob.fetch('get', url, fileAddr);
+      const dlRes = await RNFetchBlob.config({fileCache: true , path: fileAddr}).fetch('get', url);
       console.log('response');
       console.log(dlRes)
-      if (dlRes.status === 200) {
+      if (dlRes.respInfo.status === 200) {
         // return fileAddress
-        return dlRes.uri;
+        return dlRes.data;
       } else {
         return null;
       }

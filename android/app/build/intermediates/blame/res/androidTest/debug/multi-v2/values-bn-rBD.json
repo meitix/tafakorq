@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-bn-rBD\\values-bn-rBD.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\90d62290b25bf7f4e5e54cfe19b72306\\res\\values-bn-rBD\\values-bn-rBD.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,139,215,286,356,439,530,624,713,787,857",
+                        "endColumns": "83,75,70,69,82,90,93,88,73,69,65",
+                        "endOffsets": "134,210,281,351,434,525,619,708,782,852,918"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "F:\\react-native-workspace\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-bn-rBD\\values-bn-rBD.xml",
             "map": [
                 {

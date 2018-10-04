@@ -115,6 +115,8 @@ alert('going to navigation screen')
     fileService
       .getFile(this.postId, item.Id)
       .then(fileAddr => {
+        console.log('path')
+        console.log(fileAddr)
         if (fileAddr) {
           this._openFile(item.Type, fileAddr);
         }
@@ -142,7 +144,6 @@ alert('going to navigation screen')
   _openFile(type, url) {
     switch (type) {
       case "متن": {
-        console.log(this.props.navigation)
         this.props.navigation.navigate("PDFView", { address: url });
         break;
       }

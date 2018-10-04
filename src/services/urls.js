@@ -10,6 +10,9 @@ export const urls = {
     getByCategoryId: serverAddress.concat('/AppContent/Categories/Index'),
     getFile: serverAddress.concat('/AppContent/Posts/GetFile'),
 
+    // comment urls.
+    likeComment: serverAddress.concat('/AppContent/Posts/LikeComment'),
+
     // payment urls.
     finalizePurchase: serverAddress.concat('/AppContent/Purchase/GetPurchaseDetails'),
     checkUserBalance: serverAddress.concat('/AppContent/Purchase/UserBalanceIsEnough'),
