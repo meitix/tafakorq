@@ -10,6 +10,7 @@ MERGED from [:react-native-vector-icons] G:\EideTazan\Cloud\OneDrive\tafakorq\no
 MERGED from [:react-native-snackbar] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-snackbar\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-gesture-handler] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-gesture-handler\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-view-pdf] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-orientation] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-orientation\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\43f48f0bc85af3f55c9b8758e0eea893\AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\f64c1c4b57a687c9142ba593d91f0d17\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3d05c702e9f5b32957b10906e03926f7\AndroidManifest.xml:17:1-31:12
@@ -175,6 +176,8 @@ MERGED from [:react-native-gesture-handler] G:\EideTazan\Cloud\OneDrive\tafakorq
 MERGED from [:react-native-gesture-handler] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-gesture-handler\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-view-pdf] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-view-pdf] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-view-pdf\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-orientation] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-orientation\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-orientation] G:\EideTazan\Cloud\OneDrive\tafakorq\node_modules\react-native-orientation\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\43f48f0bc85af3f55c9b8758e0eea893\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.55.4] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\react-native-0.55.4.aar\43f48f0bc85af3f55c9b8758e0eea893\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:26.1.0] C:\Users\Mahdi\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\f64c1c4b57a687c9142ba593d91f0d17\AndroidManifest.xml:21:5-23:62

@@ -113,10 +113,8 @@ alert('going to navigation screen')
     // get file.
     const fileService = new FileService();
     fileService
-      .getFile(this.postId, item.Id)
+      .getFile(this.postId, item)
       .then(fileAddr => {
-        console.log('path')
-        console.log(fileAddr)
         if (fileAddr) {
           this._openFile(item.Type, fileAddr);
         }
@@ -143,23 +141,23 @@ alert('going to navigation screen')
 
   _openFile(type, url) {
     console.log(type)
-    // switch (type) {
-    //   case "متن": {
-    //     this.props.navigation.navigate("PDFView", { address: url });
-    //     break;
-    //   } 
-    //   case "عکس": {
-    //     this.props.navigation.navigate("PictureView", { address: url });
-    //     break;
-    //   }
-    //   case "ویدیو": {
-    //     this.props.navigation.navigate("VideoView", { address: url });
-    //     break;
-    //   }
-    //   default: {
-    //     alert(type)
-    //   }
-    // }
+    switch (type) {
+      case "متن": {
+        this.props.navigation.navigate("PDFView", { address: url });
+        break;
+      } 
+      case "تصویر": {
+        this.props.navigation.navigate("ImageView", { address: [{ isStatic: true ,uri: url}] });
+        break;
+      }
+      case "فیلم": {
+        this.props.navigation.navigate("VideoView", { address: url });
+        break;
+      }
+      default: {
+        alert(type)
+      }
+    }
   }
 }
 
