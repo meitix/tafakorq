@@ -147,7 +147,7 @@ alert('going to navigation screen')
         break;
       } 
       case "تصویر": {
-        this.props.navigation.navigate("ImageView", { address: [{ isStatic: true ,uri: url}] });
+        this.props.navigation.navigate("ImageView", { address: { isStatic: true ,uri: 'file://' +url} });
         break;
       }
       case "فیلم": {

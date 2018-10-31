@@ -35,6 +35,6 @@ export class AuthService {
     } 
 
     updateUser(userInfo) {
-      return ApiManager.postToApi(user)
+      return ApiManager.postToApi(userInfo)
     }
 }

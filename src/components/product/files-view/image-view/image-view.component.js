@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ImageView from 'react-native-image-view';
+import {Image} from 'react-native';
 
 export default class AppImageView extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ export default class AppImageView extends Component {
   render() {
     console.log(this.props.source)
     return (
-        <ImageView backgroundColor="#000" images={this.props.source} />
+        <Image source={this.props.source} style={{flex: 1}} />
     );
   }
 }

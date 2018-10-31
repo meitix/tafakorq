@@ -1,9 +1,11 @@
 package com.tafakorq;
 
 import android.app.Application;
-import android.content.Intent; // <--- import
-import android.content.res.Configuration; // <--- import
+import android.content.Intent;
+import android.content.res.Configuration;
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
+
 import com.github.yamill.orientation.OrientationPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.brentvatne.react.ReactVideoPackage;
@@ -30,6 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ImagePickerPackage(),
             new OrientationPackage(),
             new RNFetchBlobPackage(),
             new ReactVideoPackage(),

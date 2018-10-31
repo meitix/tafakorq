@@ -91,6 +91,7 @@
 		54E66FD347AE4C369A7D6A4E /* libRNPDFView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CBB32784A14DCBAB409C64 /* libRNPDFView.a */; };
 		C9166A09162E4A3DB62971F1 /* libReactNativeViewPDF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F84ABEF875C484497655928 /* libReactNativeViewPDF.a */; };
 		CB8A750FA2384B56913C5F5A /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D74058D37924A06ADCEC54B /* libRCTOrientation.a */; };
+		C43A5EF8ED724C5FA3A2DB92 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A2E4B44A924320A5D8C9D1 /* libRNImagePicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -459,6 +460,8 @@
 		2F84ABEF875C484497655928 /* libReactNativeViewPDF.a */ = {isa = PBXFileReference; name = "libReactNativeViewPDF.a"; path = "libReactNativeViewPDF.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		2CDC300D34B64A2896AFFC62 /* RCTOrientation.xcodeproj */ = {isa = PBXFileReference; name = "RCTOrientation.xcodeproj"; path = "../node_modules/react-native-orientation/iOS/RCTOrientation.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		0D74058D37924A06ADCEC54B /* libRCTOrientation.a */ = {isa = PBXFileReference; name = "libRCTOrientation.a"; path = "libRCTOrientation.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A81E592D04774A1EA70EE174 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		F3A2E4B44A924320A5D8C9D1 /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +500,7 @@
 				54E66FD347AE4C369A7D6A4E /* libRNPDFView.a in Frameworks */,
 				C9166A09162E4A3DB62971F1 /* libReactNativeViewPDF.a in Frameworks */,
 				CB8A750FA2384B56913C5F5A /* libRCTOrientation.a in Frameworks */,
+				C43A5EF8ED724C5FA3A2DB92 /* libRNImagePicker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +696,7 @@
 				9158ABC1138C43CCA6CB362E /* RNPDFView.xcodeproj */,
 				A5D9BA0C6B354B2CA64F81AB /* ReactNativeViewPDF.xcodeproj */,
 				2CDC300D34B64A2896AFFC62 /* RCTOrientation.xcodeproj */,
+				A81E592D04774A1EA70EE174 /* RNImagePicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1416,8 +1421,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1431,6 +1434,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1452,8 +1456,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1467,6 +1469,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1498,6 +1501,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1528,6 +1532,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1558,8 +1563,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1573,6 +1576,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1603,8 +1607,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1618,6 +1620,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;
@@ -1647,8 +1650,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1662,6 +1663,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Debug;
@@ -1691,8 +1693,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1706,6 +1706,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-pdf-view\RNPDFView",
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-orientation\iOS\RCTOrientation/**",
+					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
 				);
 			};
 			name = Release;

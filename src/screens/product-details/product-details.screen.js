@@ -15,7 +15,7 @@ import { verticalScale } from "../../helpers/size-fixer.helper";
 import { CommonStyles } from "../../common/styles";
 import { colors } from "../../common/colors";
 import {FilesGrid} from '../../components/product/files-grid/files-grid.component'
-import { Comments } from "../../components/comment/comment.compnent";
+import { Comments } from "../../components/comment/comment.component";
 // ignor warning.
 import { YellowBox } from 'react-native';
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
@@ -47,7 +47,7 @@ export default class ProductDetailsScreen extends Component {
 
   makeSliderArray(post) {
     return Enumerable.from(post.Pictures)
-      .select(p => p.Large)
+      .select(p => p.Large.toLowerCase())
       .toArray();
   }
 
@@ -59,7 +59,7 @@ export default class ProductDetailsScreen extends Component {
       .then(post => {
         const state = this.state;
         state.post = post.Post;
-        state.sliderImages = post.Pictures;
+        // state.sliderImages =this.makeSliderArray(post);
         state.relatedPosts = post.RelatedPosts;
         state.comments = post.Comments;
         state.tags = post.Tags;
@@ -72,12 +72,13 @@ export default class ProductDetailsScreen extends Component {
       });
   }
   render() {
+    console.log(this.state.sliderImages)
     return (
       <HeaderImageScrollView
         maxHeight={verticalScale(400)}
         minHeight={verticalScale(50)}
         scrollViewBackgroundColor={colors.background}
-        //headerImage={{ uri: this.state.sliderImages[0] }}
+        headerImage={{ uri: this.state.sliderImages[0] }}
         foregroundParallaxRatio={4}
       >
         {this._renderContent()}

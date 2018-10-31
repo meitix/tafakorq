@@ -1,45 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\react-native-workspace\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy-rAM\\values-hy-rAM.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Sima\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\edb429af36cadd66ea8f7880bad6008e\\res\\values-hy-rAM\\values-hy-rAM.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,139,207,279,349,421,504,578,656,730,800",
-                        "endColumns": "83,67,71,69,71,82,73,77,73,69,70",
-                        "endOffsets": "134,202,274,344,416,499,573,651,725,795,866"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25,26,27,28,29",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "1846,1930,1998,2070,2140,2212,2295,2369,2447,2521,2591",
-                        "endColumns": "83,67,71,69,71,82,73,77,73,69,70",
-                        "endOffsets": "1925,1993,2065,2135,2207,2290,2364,2442,2516,2586,2657"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Sima\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.0.1.aar\\ae433e9af6664863e6ca0e2c6cec827e\\res\\values-hy-rAM\\values-hy-rAM.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "284,387,495,618,719,829,919,1025,1140,1225,1332,1439,1538,1648,1755,1856,1976,2075",
-                        "endColumns": "102,107,122,100,109,89,105,114,84,106,106,98,109,106,100,119,98,100",
-                        "endOffsets": "382,490,613,714,824,914,1020,1135,1220,1327,1434,1533,1643,1750,1851,1971,2070,2171"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,30",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,158,266,389,490,600,690,796,911,996,1103,1210,1309,1419,1526,1627,1747,2662",
-                        "endColumns": "102,107,122,100,109,89,105,114,84,106,106,98,109,106,100,119,98,100",
-                        "endOffsets": "153,261,384,485,595,685,791,906,991,1098,1205,1304,1414,1521,1622,1742,1841,2758"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hy-rAM\\values-hy-rAM.xml",
             "map": [
                 {

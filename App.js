@@ -10,6 +10,7 @@ import ProfileScreen from './src/screens/user/profile/profile.screen';
 import PDFViewScreen from './src/screens/product-details/pdf-view/pdf-view.screen';
 import VideoViewScreen from './src/screens/product-details/video-view/video-view.screen';
 import ImageViewScreen from './src/screens/product-details/image-view/image-view.screen';
+import ChargeAccountScreen from './src/screens/charge-account/charge-account.screen';
 
 const App = createStackNavigator({
   Splash: { screen: SplashScreen},
@@ -21,7 +22,8 @@ const App = createStackNavigator({
   Profile: {screen: ProfileScreen},
   PDFView: {screen: PDFViewScreen},
   VideoView: {screen: VideoViewScreen},
-  ImageView: {screen: ImageViewScreen}
+  ImageView: {screen: ImageViewScreen},
+  ChargeAccount: {screen: ChargeAccountScreen}
 });
 
 

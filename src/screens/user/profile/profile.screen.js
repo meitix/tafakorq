@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image } from "react-native";
+import { Image, TouchableOpacity } from "react-native";
 import {
   Container,
   Item,
@@ -15,6 +15,7 @@ import { DefaultProfileImage } from "../../../components/images/profile-default/
 import { CommonStyles } from "../../../common/styles";
 import { ProfilePageStyles } from "./profile.styles";
 import { AuthService } from "../../../services/auth.service";
+import ImagePicker from 'react-native-image-crop-picker';
 
 export default class ProfileScreen extends Component {
   state = { userInfo: undefined, isLoading: false };
@@ -35,18 +36,19 @@ export default class ProfileScreen extends Component {
         <Card style={ProfilePageStyles.card}>
           <Form>
             {this._renderProfileImage()}
+            {this._renderBalance()}
             <Item floatingLabel>
               <Label style={[CommonStyles.text, CommonStyles.textRight]}>
                 نام
               </Label>
-              <Input 
-              value={this.state.userInfo ? this.state.userInfo.FirstName : ''}
-              style={[CommonStyles.text, CommonStyles.textRight]}
-              onChangeText={text => {
-                const state = this.state;
-                state.userInfo.FirstName = text;
-                this.setState(state);
-              }}
+              <Input
+                value={this.state.userInfo ? this.state.userInfo.FirstName : ""}
+                style={[CommonStyles.text, CommonStyles.textRight]}
+                onChangeText={text => {
+                  const state = this.state;
+                  state.userInfo.FirstName = text;
+                  this.setState(state);
+                }}
               />
             </Item>
             <Item floatingLabel last>
@@ -54,45 +56,63 @@ export default class ProfileScreen extends Component {
                 نام خانوادگی
               </Label>
               <Input
-               value={this.state.userInfo ? this.state.userInfo.LastName : ''} 
-              style={[CommonStyles.text, CommonStyles.textRight]}
-              onChangeText={text => {
-                const state = this.state;
-                state.userInfo.LastName = text;
-                this.setState(state);
-              }}
+                value={this.state.userInfo ? this.state.userInfo.LastName : ""}
+                style={[CommonStyles.text, CommonStyles.textRight]}
+                onChangeText={text => {
+                  const state = this.state;
+                  state.userInfo.LastName = text;
+                  this.setState(state);
+                }}
               />
             </Item>
           </Form>
-          <Button onPress={this.update}
-           style={ProfilePageStyles.button} block success rounded>
+          <Button
+            onPress={this.update}
+            style={ProfilePageStyles.button}
+            block
+            success
+            rounded
+          >
             <Text style={CommonStyles.text}>ثبت</Text>
           </Button>
         </Card>
       </Container>
     );
   }
-update() {
-  console.log('این قسمت انجام نشد')
-}
-  _renderProfileImage() {
-    console.log(this.state.userInfo)
-    if (this.state.userInfo ) {
-      if(this.state.userInfo.ThumbPath)
-      return (
-        <Thumbnail
-          style={ProfilePageStyles.profilePicture}
-          circular
-          large
-          source={{ uri: this.state.userInfo.ThumbPath.toLowerCase() }}
-        />
-        
-      );
-    } 
-      return <DefaultProfileImage style={ProfilePageStyles.profilePicture} />;
-  
-  }
+  update() {}
 
+  _renderProfileImage() {
+    console.log(this.state.userInfo);
+    if (this.state.userInfo) {
+      if (this.state.userInfo.ThumbPath)
+        return (
+          <TouchableOpacity onPress={this._changePhoto.bind(this)}>
+            <Thumbnail
+              style={ProfilePageStyles.profilePicture}
+              circular
+              large
+              source={{ uri: this.state.userInfo.ThumbPath.toLowerCase() }}
+            />
+          </TouchableOpacity>
+        );
+    }
+    return <DefaultProfileImage style={ProfilePageStyles.profilePicture} />;
+  }
+  _renderBalance() {
+    if(this.state.userInfo)
+    return <Row style={{marginTop: 30 , marginBottom: 30}}>
+      <Left>
+      <Button warning small onPress={() => this.props.navigation.navigate("ChargeAccount")}>
+      <Text style={CommonStyles.text}>شارژ حساب</Text>
+      </Button>
+      </Left>
+    <Right>
+      <Text style={[CommonStyles.text , CommonStyles.textRight]}>
+        اعتبار {this.state.userInfo.Balance} تومان
+      </Text>
+      </Right>
+    </Row>
+  }
   _authService = new AuthService();
   getUserInfo() {
     this._authService.getUserInfo().then(userInfo => {
@@ -101,4 +121,32 @@ update() {
       this.setState(state);
     });
   }
+
+  _changePhoto() {
+    const options = {
+      width: 250,
+      height: 250,
+      cropping: true
+    };
+
+    ImagePicker.openPicker(options , this._handleImageSelect.bind(this));
+  }
+
+  _handleImageSelect (response) {
+    console.log("Response = ", response);
+
+    if (response.didCancel) {
+      console.log("User cancelled image picker");
+    } else if (response.error) {
+      console.log("ImagePicker Error: ", response.error);
+    } else if (response.customButton) {
+      console.log("User tapped custom button: ", response.customButton);
+    } else {
+      const state = this.state;
+       state.userInfo.ThumbPath = 'file://' + response.path;
+       this.setState(state);
+      const source = { uri: response.path };
+    }
+  }
+
 }

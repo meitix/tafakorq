@@ -3,6 +3,7 @@ import {
   moderateScale,
   scale
 } from "../../../helpers/size-fixer.helper";
+import { CommonStyles } from "../../../common/styles";
 
 export const ProfilePageStyles = {
   container: {
