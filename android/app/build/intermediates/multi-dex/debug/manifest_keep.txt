@@ -1,3 +1,0 @@
-# Referenced at G:\EideTazan\Cloud\OneDrive\tafakorq\android\app\build\intermediates\manifests\full\debug\AndroidManifest.xml:36
--keep class com.tafakorq.MainApplication { <init>(...); }
-
