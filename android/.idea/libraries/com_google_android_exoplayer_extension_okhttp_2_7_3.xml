@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.google.android.exoplayer:extension-okhttp-2.7.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/extension-okhttp-2.7.3.aar/7a1d85c28324d8362358226513db9691/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/extension-okhttp-2.7.3.aar/7a1d85c28324d8362358226513db9691/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-okhttp/2.7.3/5dfd27cce14c06185f8b0f0b86b80d432a33611/extension-okhttp-2.7.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
