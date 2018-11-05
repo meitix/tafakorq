@@ -126,5 +126,3 @@ export default class IndexScreen extends Component {
 
 }
 
-
-AppRegistry.registerComponent("tafakorq" , () => IndexScreen);

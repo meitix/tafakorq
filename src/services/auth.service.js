@@ -1,40 +1,61 @@
-import { ApiManager , LocalManager } from './base.service';
-import { urls } from './urls';
+import { ApiManager, LocalManager } from "./base.service";
+import { urls } from "./urls";
+import Futch from "../helpers/futch.helper";
 
 export class AuthService {
+  sendMobile(mobile) {
+    return ApiManager.postToApi(urls.sendMobile, { Mobile: mobile });
+  }
 
+  saveUserId(userId) {
+    return LocalManager.saveToDevice("userId", userId + "");
+  }
 
-    sendMobile(mobile) {
-       return ApiManager.postToApi(urls.sendMobile , { Mobile: mobile})
-    }
+  getUserInfo = async () => {
+    infoStr = await LocalManager.getFromDevice("userInfo");
+    return JSON.parse(infoStr);
+  };
 
-    saveUserId(userId) {
-      return LocalManager.saveToDevice('userId' , userId+ '');
-    }
+  verifyCode(userId, code) {
+    const url = urls.verifyCode.concat(
+      "?",
+      "UserId=",
+      userId,
+      "&",
+      "Code=",
+      code
+    );
+    return ApiManager.postToApi(url);
+  }
 
-    getUserInfo = async () => {
-      infoStr = await LocalManager.getFromDevice('userInfo');
-      return JSON.parse(infoStr);
-    }
+  getUserId() {
+    return LocalManager.getFromDevice("userId");
+  }
 
-    verifyCode (userId , code) { 
-      const url = urls.verifyCode.concat(
-        '?', 'UserId=', userId,
-        '&',
-        'Code=', code
-      )
-      return ApiManager.postToApi(url);
-    }
+  saveUserInfo(userInfo) {
+    return LocalManager.saveToDevice("userInfo", JSON.stringify(userInfo));
+  }
 
-    getUserId() {
-      return LocalManager.getFromDevice('userId');
-    }
+  updateUser = async (user, onProgressHandler) => {
+    const data = new FormData();
+    data.append("Id", await this.getUserId());
+    data.append("FirstName", user.FirstName);
+    data.append("LastName", user.LastName);
 
-    saveUserInfo(userInfo) {
-      return LocalManager.saveToDevice('userInfo' , JSON.stringify(userInfo));
-    } 
+    if (user.ThumbPath.startsWith("file:"))
+      data.append("file", {
+        uri: user.ThumbPath,
+        type: "image/jpeg",
+        name: "user-profile.jpg"
+      });
 
-    updateUser(userInfo) {
-      return ApiManager.postToApi(userInfo)
-    }
+    data.append("Mobile", user.Mobile);
+    console.log(data);
+    const options = {
+      method: "post",
+      body: data
+    };
+
+    return Futch(urls.updateUser, options, onProgressHandler);
+  };
 }

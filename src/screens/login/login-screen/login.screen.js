@@ -77,10 +77,8 @@ export default class LoginScreen extends Component {
     authService
       .sendMobile(mobile)
       .then(result => {
-        console.log(result)
        result.json().then(res => {
          alert(res.Status)
-         console.log(res)
         if (res.Status) {
           authService.saveUserId(res.UserId).then(() => {
             alert('saved to device');
@@ -105,7 +103,6 @@ export default class LoginScreen extends Component {
         //   title: 'عدم دسترسی به اینترنت',
         //   duration: Snackbar.LENGTH_SHORT
         // })
-        console.log(err)
         alert("خطا در عملیات");
         state.isLoading = false;  
         this.setState(state);

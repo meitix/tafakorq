@@ -14,7 +14,9 @@ export class BottomNavigationComponent extends Component {
             label: BottomNavigationStyles.label
           }}
           label="سرچ"
-          onPress={() => this.setState({ active: "category" })}
+          onPress={() => {
+            this.props.navigation.navigate('Search')
+          } }
         />
         <BottomNavigation.Action
           key="profile"
@@ -24,7 +26,6 @@ export class BottomNavigationComponent extends Component {
             label: BottomNavigationStyles.label
           }}
           onPress={() => { 
-            this.setState({ active: "profile" });
             this.props.navigation.navigate('Profile')
           }
         }
@@ -37,7 +38,6 @@ export class BottomNavigationComponent extends Component {
           }}
           label="مطالب انگیزشی"
           onPress={() => { 
-            this.setState({ active: "credit" });
             this.props.navigation.navigate('Products' , {id: 4})
           }
         }

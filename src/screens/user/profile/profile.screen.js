@@ -9,13 +9,17 @@ import {
   Input,
   Card,
   Button,
-  Thumbnail
+  Thumbnail,
+  Row,
+  Left,
+  Right
 } from "native-base";
 import { DefaultProfileImage } from "../../../components/images/profile-default/default-profile.component";
 import { CommonStyles } from "../../../common/styles";
 import { ProfilePageStyles } from "./profile.styles";
 import { AuthService } from "../../../services/auth.service";
-import ImagePicker from 'react-native-image-crop-picker';
+import ImagePicker from "react-native-image-picker";
+import { PaymentService } from "../../../services/payment.service";
 
 export default class ProfileScreen extends Component {
   state = { userInfo: undefined, isLoading: false };
@@ -24,6 +28,7 @@ export default class ProfileScreen extends Component {
   constructor(props) {
     super(props);
     this.getUserInfo();
+    this.paymentService = new PaymentService();
   }
 
   render() {
@@ -67,7 +72,7 @@ export default class ProfileScreen extends Component {
             </Item>
           </Form>
           <Button
-            onPress={this.update}
+            onPress={this.update.bind(this)}
             style={ProfilePageStyles.button}
             block
             success
@@ -79,10 +84,14 @@ export default class ProfileScreen extends Component {
       </Container>
     );
   }
-  update() {}
+  update() {
+    this._authService.updateUser(this.state.userInfo).then(res => {
+      res = JSON.parse(res.response);
+      alert(res.message);
+    });
+  }
 
   _renderProfileImage() {
-    console.log(this.state.userInfo);
     if (this.state.userInfo) {
       if (this.state.userInfo.ThumbPath)
         return (
@@ -98,20 +107,27 @@ export default class ProfileScreen extends Component {
     }
     return <DefaultProfileImage style={ProfilePageStyles.profilePicture} />;
   }
+
   _renderBalance() {
-    if(this.state.userInfo)
-    return <Row style={{marginTop: 30 , marginBottom: 30}}>
-      <Left>
-      <Button warning small onPress={() => this.props.navigation.navigate("ChargeAccount")}>
-      <Text style={CommonStyles.text}>شارژ حساب</Text>
-      </Button>
-      </Left>
-    <Right>
-      <Text style={[CommonStyles.text , CommonStyles.textRight]}>
-        اعتبار {this.state.userInfo.Balance} تومان
-      </Text>
-      </Right>
-    </Row>
+    if (this.state.userInfo)
+      return (
+        <Row style={{ marginTop: 30, marginBottom: 30 }}>
+          <Left>
+            <Button
+              warning
+              small
+              onPress={this.paymentService.chargeBalance.bind(this)}
+            >
+              <Text style={CommonStyles.text}>شارژ حساب</Text>
+            </Button>
+          </Left>
+          <Right>
+            <Text style={[CommonStyles.text, CommonStyles.textRight]}>
+              اعتبار {this.state.userInfo.Balance} تومان
+            </Text>
+          </Right>
+        </Row>
+      );
   }
   _authService = new AuthService();
   getUserInfo() {
@@ -124,17 +140,17 @@ export default class ProfileScreen extends Component {
 
   _changePhoto() {
     const options = {
-      width: 250,
-      height: 250,
-      cropping: true
+      title: "انتخاب تصویر",
+      storageOptions: {
+        skipBackup: true,
+        path: "images"
+      }
     };
 
-    ImagePicker.openPicker(options , this._handleImageSelect.bind(this));
+    ImagePicker.showImagePicker(options, this._handleImageSelect.bind(this));
   }
 
-  _handleImageSelect (response) {
-    console.log("Response = ", response);
-
+  _handleImageSelect(response) {
     if (response.didCancel) {
       console.log("User cancelled image picker");
     } else if (response.error) {
@@ -143,10 +159,8 @@ export default class ProfileScreen extends Component {
       console.log("User tapped custom button: ", response.customButton);
     } else {
       const state = this.state;
-       state.userInfo.ThumbPath = 'file://' + response.path;
-       this.setState(state);
-      const source = { uri: response.path };
+      state.userInfo.ThumbPath = "file://" + response.path;
+      this.setState(state);
     }
   }
-
 }

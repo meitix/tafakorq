@@ -1,6 +1,7 @@
 import { ApiManager } from './base.service';
 import { AuthService } from './auth.service';
 import { urls } from './urls';
+import { Linking } from 'react-native';
 
 export class PaymentService {
 
@@ -29,5 +30,11 @@ export class PaymentService {
     payWithBalanceUrl = async (postId) => {
         const userId = await this._authService.getUserId();
         return url = urls.payWithGetway.concat('?','userId=',userId ,'&', 'postId=' , postId);
+    }
+
+    chargeBalance () {
+        this._authService.getUserId().then(userId => {
+            Linking.openURL(urls.chargeBalance.concat('/' + userId))
+        })
     }
 }

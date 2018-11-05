@@ -8,7 +8,6 @@ export class CategoryService {
             '?',
             'MenuId=', categoryId
     )
-    console.log(url);
        return ApiManager.getFromApi(url);
     }
 

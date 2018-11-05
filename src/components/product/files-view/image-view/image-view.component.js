@@ -7,7 +7,6 @@ export default class AppImageView extends Component {
   }
 
   render() {
-    console.log(this.props.source)
     return (
         <Image source={this.props.source} style={{flex: 1}} />
     );

@@ -140,7 +140,6 @@ alert('going to navigation screen')
   }
 
   _openFile(type, url) {
-    console.log(type)
     switch (type) {
       case "متن": {
         this.props.navigation.navigate("PDFView", { address: url });

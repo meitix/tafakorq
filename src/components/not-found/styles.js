@@ -8,9 +8,9 @@ export const NotFoundStyles = {
     },
     icon: {
         marginTop: verticalScale(50),
-        width: moderateScale(130),
+        width: moderateScale(200),
         alignSelf: 'center',
-        height: verticalScale(140)
+        height: verticalScale(200)
     },
     text:[CommonStyles.text , {
         alignSelf: 'center',

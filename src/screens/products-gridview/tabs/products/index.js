@@ -4,8 +4,6 @@ import { PostService } from "../../../../services/post.service";
 import { AppSpinner } from "../../../../components/spinner";
 
 import { NotFound } from "../../../../components/not-found";
-// import { AppRegistry } from 'react-native';
-// AppRegistry.registerComponent("tafakorq" , () => ProductsTab);
 
 export class ProductsTab extends Component {
   state = { products: undefined };
@@ -41,7 +39,6 @@ export class ProductsTab extends Component {
 
   endHandler() {
     this.page++;
-    console.log(this.page)
     this.getProducts();
   }
 

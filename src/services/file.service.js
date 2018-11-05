@@ -56,8 +56,6 @@ export class FileService {
         fileCache: true,
         path: fileAddr
       }).fetch("get", url);
-      console.log("response");
-      console.log(dlRes);
       if (dlRes.respInfo.status === 200) {
         // return fileAddress
         return dlRes.data;

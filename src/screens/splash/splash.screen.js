@@ -21,7 +21,6 @@ export default class SplashScreen extends Component {
   componentDidMount() {
     this._authService
       .getUserId()
-      .then(userId => console.log(userId))
       .catch(err => {
         throw err;
       });

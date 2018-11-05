@@ -25,7 +25,10 @@ export class PostService {
         return ApiManager.getFromApi(url);
     }
 
-    getByCategoryId(categoryId , page, pageSize , q , userId, priceState) {
+    getByCategoryId = async (categoryId , page, pageSize , q , userId, priceState) => {
+        const authService = new AuthService();
+        userId = await authService.getUserId(); 
+
         const url = urls.getByCategoryId.concat(
             '?',
             'MenuId=', categoryId,
@@ -40,6 +43,7 @@ export class PostService {
             '&',
             'priceState=', priceState
         )
+        console.log(url);
         return ApiManager.getFromApi(url);
     }
   

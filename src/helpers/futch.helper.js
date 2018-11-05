@@ -1,5 +1,4 @@
-const futch = (url, opts={}, onProgress) => {
-    console.log(url, opts)
+const Futch = (url, opts={}, onProgress) => {
     return new Promise( (res, rej)=>{
         var xhr = new XMLHttpRequest();
         xhr.open(opts.method || 'get', url);
@@ -12,4 +11,4 @@ const futch = (url, opts={}, onProgress) => {
         xhr.send(opts.body);
     });
 }
-export default futch
+export default Futch

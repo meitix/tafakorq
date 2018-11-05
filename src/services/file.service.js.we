@@ -25,7 +25,6 @@ export class FileService {
        })
        .fetch('GET', url)
        .then((res) => {
-        console.log('The file saved to ', res.path());
         LocalManager.saveToDevice('file_'.concat(fileId) , res.path()).then(() => LocalManager.saveToDevice('SavedFiles' , fileId))
        });
     }
