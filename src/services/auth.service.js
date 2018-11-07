@@ -50,7 +50,6 @@ export class AuthService {
       });
 
     data.append("Mobile", user.Mobile);
-    console.log(data);
     const options = {
       method: "post",
       body: data
@@ -58,4 +57,9 @@ export class AuthService {
 
     return Futch(urls.updateUser, options, onProgressHandler);
   };
+
+  fetchUserInfo = async () => {
+    const userId = await this.getUserId();
+    return ApiManager.getFromApi(urls.userInfo.concat('?','UserId=',userId));
+  }
 }

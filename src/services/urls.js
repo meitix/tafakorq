@@ -17,14 +17,15 @@ export const urls = {
     finalizePurchase: serverAddress.concat('/AppContent/Purchase/GetPurchaseDetails'),
     checkUserBalance: serverAddress.concat('/AppContent/Purchase/UserBalanceIsEnough'),
     payWithBalance: serverAddress.concat('/AppContent/Purchase/PaymentWithBalance'),
-    payWithGetway: serverAddress.concat('/AppContent/Purchase/Index'),
+    payWithGateway: serverAddress.concat('/AppContent/Purchase/Index'),
     chargeBalance: serverAddress.concat('/UserPanel/Dashboard/Charge'),
 
     // auth urls.
     sendMobile: serverAddress.concat('/AppContent/Authentication/SendSMS'),
     verifyCode: serverAddress.concat('/AppContent/Authentication/CheckCode'),
     updateUser: serverAddress.concat('/UserPanel/Profile/Edit'),
-    
+    userInfo: serverAddress.concat('/UserPanel/Profile/GetUserInfo'),
+
     // layout data urls.
     layoutUrl: serverAddress.concat('/AppContent/Home/Layout'),
 

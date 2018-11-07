@@ -90,7 +90,7 @@ export default class IndexScreen extends Component {
   renderContent() {
     return (
       <Container>
-        <MainPageHeader onSearchButtonPressed={this.searchButtonPressed} onMenuButtonPressed={() => {
+        <MainPageHeader onSearchButtonPressed={this.searchButtonPressed.bind(this)} onMenuButtonPressed={() => {
                 const state = this.state;
                 state.drawerIsOpen = true;
                 this.setState(state);
@@ -122,6 +122,10 @@ export default class IndexScreen extends Component {
         <BottomNavigationComponent navigation={this.props.navigation} />
       </Container>
     );
+  }
+
+  searchButtonPressed() {
+    this.props.navigation.navigate("Search")
   }
 
 }

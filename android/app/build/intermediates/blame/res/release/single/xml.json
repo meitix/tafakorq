@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\react-native-0.55.4.aar\\5063ea3f5a5e75a479c5af4930177444\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
+        "source": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\node_modules\\react-native-image-picker\\android\\build\\intermediates\\packaged_res\\release\\xml\\provider_paths.xml"
+    }
+]

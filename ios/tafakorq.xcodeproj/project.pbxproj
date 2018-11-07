@@ -79,6 +79,8 @@
 		033FF08FE8924300A4F3A9DA /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C9479D5D05A4C00AECC0F92 /* FontAwesome5_Solid.ttf */; };
 		2CB2BA54CC1E4B02880BDCD3 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 193E131E147B4539989C24BA /* libRNGestureHandler.a */; };
 		4D214DDE9CBE4D8AAD56C0EC /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C236B4B00FC34383B7B7C126 /* libRNImagePicker.a */; };
+		41522E2227F14CFC870955B7 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40190F84D114473A82981254 /* libBVLinearGradient.a */; };
+		D53F0431B5E04E3FA7163B65 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA284696CE840DB990D4ED7 /* search.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -434,6 +436,9 @@
 		193E131E147B4539989C24BA /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		B757C4EA1A014612AFF9BFC1 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		C236B4B00FC34383B7B7C126 /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F48D5524920D480DB1CB64C4 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		40190F84D114473A82981254 /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		ADA284696CE840DB990D4ED7 /* search.png */ = {isa = PBXFileReference; name = "search.png"; path = "../assets/images/search.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +475,7 @@
 				973F49EFD4B74BBBA8BADF05 /* libReactNativeViewPDF.a in Frameworks */,
 				2CB2BA54CC1E4B02880BDCD3 /* libRNGestureHandler.a in Frameworks */,
 				4D214DDE9CBE4D8AAD56C0EC /* libRNImagePicker.a in Frameworks */,
+				41522E2227F14CFC870955B7 /* libBVLinearGradient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +670,7 @@
 				5BEBE0BDE02E406592DD44D0 /* ReactNativeViewPDF.xcodeproj */,
 				75A4511108FC4BE3B148C10C /* RNGestureHandler.xcodeproj */,
 				B757C4EA1A014612AFF9BFC1 /* RNImagePicker.xcodeproj */,
+				F48D5524920D480DB1CB64C4 /* BVLinearGradient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -748,6 +755,7 @@
 				5A311BE37A534F49B9D663A8 /* FontAwesome5_Brands.ttf */,
 				90C52D0E53DF4BCF98C6A759 /* FontAwesome5_Regular.ttf */,
 				4C9479D5D05A4C00AECC0F92 /* FontAwesome5_Solid.ttf */,
+				ADA284696CE840DB990D4ED7 /* search.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1232,6 +1240,7 @@
 				D8E3844AFA124325B3C6A5BE /* FontAwesome5_Brands.ttf in Resources */,
 				B5F987D10008419E92C96E8A /* FontAwesome5_Regular.ttf in Resources */,
 				033FF08FE8924300A4F3A9DA /* FontAwesome5_Solid.ttf in Resources */,
+				D53F0431B5E04E3FA7163B65 /* search.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1367,6 +1376,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1378,6 +1388,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Debug;
@@ -1400,6 +1411,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1411,6 +1423,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Release;
@@ -1441,6 +1454,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Debug;
@@ -1470,6 +1484,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Release;
@@ -1500,6 +1515,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1511,6 +1527,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Debug;
@@ -1541,6 +1558,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1552,6 +1570,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Release;
@@ -1581,6 +1600,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1592,6 +1612,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Debug;
@@ -1621,6 +1642,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1632,6 +1654,7 @@
 					"$(SRCROOT)\..\node_modules\react-native-view-pdf\ReactNativeViewPDF",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-image-picker\ios",
+					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
 				);
 			};
 			name = Release;

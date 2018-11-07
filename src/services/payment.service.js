@@ -29,7 +29,7 @@ export class PaymentService {
 
     payWithBalanceUrl = async (postId) => {
         const userId = await this._authService.getUserId();
-        return url = urls.payWithGetway.concat('?','userId=',userId ,'&', 'postId=' , postId);
+        return url = urls.payWithGateway.concat('?','userId=',userId ,'&', 'postId=' , postId);
     }
 
     chargeBalance () {

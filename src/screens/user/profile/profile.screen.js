@@ -85,9 +85,22 @@ export default class ProfileScreen extends Component {
     );
   }
   update() {
+    // update user data in server.
     this._authService.updateUser(this.state.userInfo).then(res => {
       res = JSON.parse(res.response);
+      // show the operation result to user.
       alert(res.message);
+
+      // get new data from server.
+      this._authService.fetchUserInfo().then(userData => {
+        userData.json().then(userJsonData => {
+          // sync the view with new data.
+          this._authService.saveUserInfo(userJsonData);
+          const state = this.state;
+          state.userInfo = userJsonData;
+          this.setState(state);
+        });
+      });
     });
   }
 

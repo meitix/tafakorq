@@ -1,6 +1,6 @@
 export const SplashStyles = {
     page: {
-        backgroundColor: '#E64A19',
+        backgroundColor: '#ffeeff',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'

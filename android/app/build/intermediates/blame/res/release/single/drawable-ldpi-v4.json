@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_repeat_all.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_repeat_all.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_previous.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_previous.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_fullscreen_exit.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_fullscreen_exit.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_rewind.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_rewind.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_shuffle.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_shuffle.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_play.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_play.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_pause.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_pause.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_repeat_one.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_repeat_one.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_fastforward.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_fastforward.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_next.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_next.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_edit_mode_logo.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_edit_mode_logo.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_fullscreen_enter.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_fullscreen_enter.png"
+    },
+    {
+        "merged": "G:\\EideTazan\\Cloud\\OneDrive\\tafakorq\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldpi-v4\\exo_controls_repeat_off.png",
+        "source": "C:\\Users\\Mahdi\\.gradle\\caches\\transforms-1\\files-1.1\\exoplayer-ui-2.7.3.aar\\8e17ae250e3c940bae24e2a872a1ce25\\res\\drawable-ldpi-v4\\exo_controls_repeat_off.png"
+    }
+]
